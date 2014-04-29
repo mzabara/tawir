@@ -1,0 +1,247 @@
+html,body{
+  width: 100%;
+  height: 100%;
+}
+body{
+  background-color: #13407c;
+  font-family: 'Open Sans', 'sans-serif';
+  color: #ffffff;
+  font-size: 13px;
+}
+
+#map_canvas{
+  position: absolute;
+  top: 26px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.w-devider{
+  margin: 20px 0;
+  width: 100%;
+  height: 14px;
+  background: url("../images/wdevider.png") no-repeat;
+  background-position: 50% 0;
+  .clearfix;
+}
+
+.section-holder{
+  position: relative;
+  padding-top: 55px;
+  height: 100%;
+  overflow: hidden;
+  background-color: #13407c;
+  .container{
+    position: relative;
+    z-index: 2;
+    &.vcenter{
+      height: 100%;
+      position: relative;
+      display: table;
+      table-layout: fixed;
+      .section-content{
+        display: table-cell;
+        vertical-align: middle;
+        width: 100%;
+      }
+    }
+  }
+  h1.light-heading{
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 35px;
+  }
+  h2.light-heading{
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 20px;
+  }
+}
+
+#sectionStart{
+  background: url("../images/bg/section-1-bg.jpg") 50% 0 no-repeat;
+
+  .btn-view{
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 20px;
+    width: 200px;
+    padding: 15px;
+    text-decoration: none;
+    color: #ffffff;
+    border: solid 4px #ffffff;
+    text-transform: uppercase;
+    &:hover{
+      background-color: #ffffff;
+      color: #13407c;
+    }
+  }
+
+  .logo-big{
+    margin-bottom: 40px;
+  }
+
+  .intro-text{
+    line-height: 25px;
+  }
+
+  .addres-holder{
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    bottom: 2%;
+    top: auto;
+  }
+}
+
+#sectionOurServices{
+  p{
+    line-height: 24px;
+  }
+
+  .services-list{
+    .service-item{
+      margin-top: 35px;
+      color: #ffffff;
+      font-size: 18px;
+      font-weight: 300;
+      display: inline-block;
+      vertical-align: top;
+      .service-item-icon{
+        display: inline-block;
+        vertical-align: top;
+        margin-bottom: 25px;
+        width: 130px;
+        height: 144px;
+        background: url("../images/services/hover.png") 0 0 no-repeat;
+        .icon{
+          display: inline-block;
+          margin-top: 30px;
+          width: 64px;
+          height: 64px;
+          background: url("../images/services/icons.png") 0 0 no-repeat;
+          &.icon-1{
+            background-position: 0 0;
+          }
+          &.icon-2{
+            background-position: 0 -128px;
+          }
+          &.icon-3{
+            background-position: 0 -256px;
+          }
+          &.icon-3{
+            background-position: 0 -256px;
+          }
+          &.icon-4{
+            background-position: 0 -384px;
+          }
+          &.icon-5{
+            background-position: 0 -512px;
+          }
+          &.icon-6{
+            background-position: 0 -640px;
+          }
+          &.icon-7{
+            background-position: 0 -768px;
+          }
+          &.icon-8{
+            background-position: 0 -896px;
+          }
+        }
+      }
+      &:hover{
+        text-decoration: none;
+        .service-item-icon{
+          background-position: 0 -144px!important;
+        }
+        .icon-1{
+          background-position: 0 -64px!important;
+        }
+        .icon-2{
+          background-position: 0 -192px!important;
+        }
+        .icon-3{
+          background-position: 0 -320px!important;
+        }
+        .icon-4{
+          background-position: 0 -448px!important;
+        }
+        .icon-5{
+          background-position: 0 -576px!important;
+        }
+        .icon-6{
+          background-position: 0 -704px!important;
+        }
+        .icon-7{
+          background-position: 0 -832px!important;
+        }
+        .icon-8{
+          background-position: 0 -960px!important;
+        }
+      }
+      .service-item-title{
+        display: block;
+      }
+    }
+  }
+
+}
+
+#sectionWhyWe{
+  background: url("../images/bg/section-1-bg.jpg") 50% 0 no-repeat;
+}
+
+#sectionQuestion{
+  background: url("../images/bg/section-1-bg.jpg") 50% 0 no-repeat;
+}
+
+#sectionContacts{
+  height: 90%;
+  .contact-info-holder{
+    width: 100%;
+    padding: 10px 25px 25px 25px;
+    background-color: rgba(255,255,255,.8);
+    color: #274e8d;
+    a{
+      color: #274e8d;
+    }
+    .w-devider{
+      background-position: 50% -14px;
+    }
+    .phone-num{
+      color: #333333;
+      font-size: 27px;
+      font-weight: 300;
+    }
+    .nav-contact{
+      margin-top: 25px;
+      text-align: center;
+      a{
+        &:hover{
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+footer{
+  background-color: #13407c;
+  padding: 15px 0 5px 0;
+  font-size: 12px;
+  a{
+    color: #ffffff;
+    &:hover{
+      color: #ffffff;
+    }
+  }
+  ul{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    li{
+      text-transform: uppercase;
+    }
+  }
+}
