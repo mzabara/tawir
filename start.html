@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,7 +15,7 @@
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<body data-spy="scroll" data-target=".navbar-fixed-top">
+<body>
 <nav class="navbar navbar-fixed-top" role="navigation">
     <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -33,7 +33,7 @@
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse text-center" id="navbar-collapse">
-            <a href="#addOrder" class="btn-order">Сделать заказ</a>
+            <a href="#addOrder" class="btn-order hidden">Сделать заказ</a>
             <ul class="nav navbar-nav">
                 <li><a href="#sectionOurServices">Наши услуги</a></li>
                 <li><a href="#sectionWhyWe">О нас</a></li>
@@ -48,15 +48,15 @@
     <div class="container vcenter">
         <div class="section-content text-center">
             <div class="row">
-                <div class="col-md-6 col-md-offset-3">
+                <div class="col-md-6 col-md-offset-3 text-center">
                     <img src="images/logo-big.png" alt="" class="img-responsive logo-big"/>
                     <p class="intro-text">Все необходимые сведения о логотипе, его версиях для разных задач и остальных элементах, из которых складывается фирменный стиль «Капсидеи», собраны в руководстве.</p>
                     <a href="#" class="btn-view">Смотреть видео-презентацию</a>
                 </div>
-                <div class="addres-holder">Москва, Краснопресненская наб. д. 12, тел. +7 495 363 40 60</div>
             </div>
         </div>
     </div>
+    <div class="addres-holder">Москва, Краснопресненская наб. д. 12, тел. +7 495 363 40 60</div>
 </section>
 <section id="sectionOurServices" class="section-holder">
     <div class="container vcenter">
@@ -166,7 +166,41 @@
         <div class="section-content">
             <h1 class="light-heading text-center">Наши клиенты</h1>
             <div class="w-devider"></div>
-            s
+            <div class="clients-holder">
+                <div class="row">
+                    <div class="col-md-4 col-sm-4 text-center">
+                        <a href=""><img src="images/clients/1.png" alt=""/></a>
+                    </div>
+                    <div class="col-md-4 col-sm-4 text-center">
+                        <a href=""><img src="images/clients/1.png" alt=""/></a>
+                    </div>
+                    <div class="col-md-4  col-sm-4 text-center">
+                        <a href=""><img src="images/clients/1.png" alt=""/></a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-4 text-center">
+                        <a href=""><img src="images/clients/1.png" alt=""/></a>
+                    </div>
+                    <div class="col-md-4 col-sm-4 text-center">
+                        <a href=""><img src="images/clients/1.png" alt=""/></a>
+                    </div>
+                    <div class="col-md-4 col-sm-4 text-center">
+                        <a href=""><img src="images/clients/1.png" alt=""/></a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-4 text-center">
+                        <a href=""><img src="images/clients/1.png" alt=""/></a>
+                    </div>
+                    <div class="col-md-4 col-sm-4 text-center">
+                        <a href=""><img src="images/clients/1.png" alt=""/></a>
+                    </div>
+                    <div class="col-md-4 col-sm-4 text-center">
+                        <a href=""><img src="images/clients/1.png" alt=""/></a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>
@@ -175,7 +209,111 @@
         <div class="section-content">
             <h1 class="light-heading text-center">ВОПРОСЫ</h1>
             <div class="w-devider"></div>
-            s
+
+            <div id="questionCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#questionCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#questionCarousel" data-slide-to="1"></li>
+                    <li data-target="#questionCarousel" data-slide-to="2"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="question-holder">
+                                    <h4>Выполняете ли вы срочные заказы?</h4>
+                                    <p>Быстрая оценка объёма работы или проекта. От 1 часа – «простое» задание, 3 дня масштабная  Быстрое выполнение работ. Проекта. От 1 часа – «простое» задание, 3 дня масштабная Быстрые результаты масштабных проектов. Что это действительно одна из важнейших точек </p>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="question-holder">
+                                    <h4>Осуществляете ли доставку?</h4>
+                                    <p>Быстрая оценка объёма работы или проекта. От 1 часа – «простое» задание, 3 дня масштабная  Быстрое выполнение работ. Проекта. От 1 часа – «простое» задание, 3 дня масштабная Быстрые результаты масштабных проектов. Что это действительно одна из важнейших точек </p>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="question-holder">
+                                    <h4>У вас 100% предоплата или по частям?</h4>
+                                    <p>Быстрая оценка объёма работы или проекта. От 1 часа – «простое» задание, 3 дня масштабная  Быстрое выполнение работ. Проекта. От 1 часа – «простое» задание, 3 дня масштабная Быстрые результаты масштабных проектов. Что это действительно одна из важнейших точек </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="question-holder">
+                                    <h4>Есть ли у вас скидки?</h4>
+                                    <p>Быстрая оценка объёма работы или проекта. От 1 часа – «простое» задание, 3 дня масштабная  Быстрое выполнение работ. Проекта. От 1 часа – «простое» задание, 3 дня масштабная Быстрые результаты масштабных проектов. Что это действительно одна из важнейших точек </p>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="question-holder">
+                                    <h4>Вы можете напечаатать по нашим эскизам?</h4>
+                                    <p>Быстрая оценка объёма работы или проекта. От 1 часа – «простое» задание, 3 дня масштабная  Быстрое выполнение работ. Проекта. От 1 часа – «простое» задание, 3 дня масштабная Быстрые результаты масштабных проектов. Что это действительно одна из важнейших точек </p>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="question-holder">
+                                    <h4>Технические характеристики DIGITAL 124</h4>
+                                    <p>Быстрая оценка объёма работы или проекта. От 1 часа – «простое» задание, 3 дня масштабная  Быстрое выполнение работ. Проекта. От 1 часа – «простое» задание, 3 дня масштабная Быстрые результаты масштабных проектов. Что это действительно одна из важнейших точек </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="question-holder">
+                                    <h4>Выполняете ли вы срочные заказы?</h4>
+                                    <p>Быстрая оценка объёма работы или проекта. От 1 часа – «простое» задание, 3 дня масштабная  Быстрое выполнение работ. Проекта. От 1 часа – «простое» задание, 3 дня масштабная Быстрые результаты масштабных проектов. Что это действительно одна из важнейших точек </p>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="question-holder">
+                                    <h4>Осуществляете ли доставку?</h4>
+                                    <p>Быстрая оценка объёма работы или проекта. От 1 часа – «простое» задание, 3 дня масштабная  Быстрое выполнение работ. Проекта. От 1 часа – «простое» задание, 3 дня масштабная Быстрые результаты масштабных проектов. Что это действительно одна из важнейших точек </p>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="question-holder">
+                                    <h4>У вас 100% предоплата или по частям?</h4>
+                                    <p>Быстрая оценка объёма работы или проекта. От 1 часа – «простое» задание, 3 дня масштабная  Быстрое выполнение работ. Проекта. От 1 часа – «простое» задание, 3 дня масштабная Быстрые результаты масштабных проектов. Что это действительно одна из важнейших точек </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="question-holder">
+                                    <h4>Есть ли у вас скидки?</h4>
+                                    <p>Быстрая оценка объёма работы или проекта. От 1 часа – «простое» задание, 3 дня масштабная  Быстрое выполнение работ. Проекта. От 1 часа – «простое» задание, 3 дня масштабная Быстрые результаты масштабных проектов. Что это действительно одна из важнейших точек </p>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="question-holder">
+                                    <h4>Вы можете напечаатать по нашим эскизам?</h4>
+                                    <p>Быстрая оценка объёма работы или проекта. От 1 часа – «простое» задание, 3 дня масштабная  Быстрое выполнение работ. Проекта. От 1 часа – «простое» задание, 3 дня масштабная Быстрые результаты масштабных проектов. Что это действительно одна из важнейших точек </p>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="question-holder">
+                                    <h4>Технические характеристики DIGITAL 124</h4>
+                                    <p>Быстрая оценка объёма работы или проекта. От 1 часа – «простое» задание, 3 дня масштабная  Быстрое выполнение работ. Проекта. От 1 часа – «простое» задание, 3 дня масштабная Быстрые результаты масштабных проектов. Что это действительно одна из важнейших точек </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Controls -->
+                <a class="left carousel-control" href="#questionCarousel" data-slide="prev">
+                    <img src="images/prev.png" alt=""/>
+                </a>
+                <a class="right carousel-control" href="#questionCarousel" data-slide="next">
+                    <img src="images/next.png" alt=""/>
+                </a>
+            </div>
         </div>
     </div>
 </section>
@@ -184,15 +322,15 @@
     <div class="container vcenter">
         <div class="section-content">
             <div class="row">
-                <div class="col-md-7 col-md-push-2">
+                <div class="col-md-8 col-sm-9 col-sm-push-2 col-md-push-2">
                     <div class="contact-info-holder">
                         <h1 class="light-heading text-center">Контакты</h1>
                         <div class="w-devider"></div>
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-md-6 col-sm-6">
                                 123610, Москва<br>Краснопресненская наб. д. 12<br><a href="mailto:info@tawir.ru">info@tawir.ru</a>
                             </div>
-                            <div class="col-md-6 text-right">
+                            <div class="col-md-6 col-sm-6 text-right">
                                 <div class="phone-num">+7 (495) 363 40 60</div>
                             </div>
                         </div>
@@ -219,20 +357,21 @@
             <div class="col-md-2">
                 © 2014 TAWIR MEDIA
             </div>
+
             <ul class="col-md-10">
-                <li class="col-md-3">
+                <li class="col-md-3 col-sm-3">
                     <p><a href="">полиграфия</a></p>
                     <p><a href="">сувенирная продукция</a></p>
                 </li>
-                <li class="col-md-3">
+                <li class="col-md-3 col-sm-3">
                     <p><a href="">реклама в сми</a></p>
                     <p><a href="">btl</a></p>
                 </li>
-                <li class="col-md-3">
+                <li class="col-md-3 col-sm-3">
                     <p><a href="">реклама на транспорте</a></p>
                     <p><a href="">наружная реклама</a></p>
                 </li>
-                <li class="col-md-3">
+                <li class="col-md-3 col-sm-3">
                     <p><a href="">разработка сайтов</a></p>
                     <p><a href="">продвижение сайтов</a></p>
                 </li>

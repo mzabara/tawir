@@ -11,19 +11,42 @@ $(window).on('scroll',function(){
     }
 });
 
-$(function(){
-    $('.navbar-fixed-top').carousel({});
-    var $root = $('html, body');
-    $('a').click(function() {
-        var href = $.attr(this, 'href');
-        $root.animate({
-            scrollTop: $(href).offset().top
-        }, 500, function () {
-            window.location.hash = href;
+$(document).ready(function () {
+    $('.navbar-fixed-top a[href^="#"]').on('click', function (e) {
+        e.preventDefault();
+
+        var target = this.hash,
+            $target = $(target);
+
+        $('html, body').stop().animate({
+            'scrollTop': $target.offset().top - 0
+        }, 900, 'swing', function () {
+            window.location.hash = target;
         });
-        return false;
+    });
+    $('li').click(function() {
+        if ( ! $(this).hasClass('active')) {
+            $('li.active').removeClass('active');
+            $(this).addClass('active');
+            offsetTop = $(this).offset().top - $('.nav').offset().top;
+            offsetLeft = $(this).offset().left - $('.nav').offset().left;
+        }
     });
 });
+
+//$(function(){
+//    $('.navbar-fixed-top').scrollElement({});
+//    var $root = $('html, body');
+//    $('a').click(function() {
+//        var href = $.attr(this, 'href');
+//        $root.animate({
+//            scrollTop: $(href).offset().top
+//        }, 500, function () {
+//            window.location.hash = href;
+//        });
+//        return false;
+//    });
+//});
 
 function initialize() {
     var map_canvas = document.getElementById('map_canvas');

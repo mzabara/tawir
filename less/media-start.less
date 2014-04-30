@@ -1,0 +1,78 @@
+@media (max-width: @screen-md-min) {
+  body{
+    height: auto!important;
+  }
+  .navbar-fixed-top{
+    .navbar-brand{
+      margin-left: -15px!important;
+    }
+
+    .navbar-nav{
+      float: right!important;
+      width: auto;
+      li{
+        a{
+          padding-left: 7px;
+          padding-right: 7px;
+        }
+      }
+    }
+  }
+  .vcenter{
+    display: block!important;
+    height: auto!important;
+    table-layout: inherit!important;
+  }
+  .section-content{
+    display: block!important;
+    width: 100%;
+    height: auto!important;
+  }
+  #sectionStart{
+    padding-bottom: 55px;
+  }
+  #sectionOurServices{
+    padding-bottom: 55px;
+  }
+  #sectionWhyWe{
+    .col-md-3,
+    .col-md-6{
+      padding-top: 15px;
+      padding-bottom: 15px;
+      h2.light-heading,
+      p{
+        text-align: left;
+      }
+    }
+  }
+  #sectionContacts{
+    height: 600px;
+  }
+}
+
+@media (max-width: @screen-sm-min) {
+  .navbar-fixed-top{
+    .navbar-toggle{
+      background-color: #13407c;
+      border-radius: 0;
+      .icon-bar{
+        background-color: #ffffff;
+      }
+    }
+
+    .navbar-brand{
+      margin-left: 15px!important;
+    }
+
+    .navbar-nav{
+      float: right!important;
+      width: auto;
+      li{
+        a{
+          padding-left: 7px;
+          padding-right: 7px;
+        }
+      }
+    }
+  }
+}
