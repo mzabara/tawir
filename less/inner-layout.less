@@ -1,0 +1,58 @@
+.inner-page-holder{
+  main{
+    aside{
+      position: relative;
+      float: left;
+      width: 31%;
+      background: url("../images/bg/section-1-bg.jpg") 0 0 repeat;
+      height: 100vh;
+      .addres-holder{
+        position: absolute;
+        width: 250px;
+        bottom: 85px;
+        right: 0;
+      }
+      .section-nav{
+        position: relative;
+        top: 40px;
+        float: right;
+        width: 225px;
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        border-bottom:none;
+        li{
+          width: 100%;
+          &.active{
+            a{
+              border: none;
+              background-color: #13407c;
+              color: #ffffff;
+            }
+          }
+          a{
+            display: block;
+            padding: 10px;
+            color: #ffffff;
+            font-size: 14px;
+            border: none;
+            border-radius: 0;
+            margin: 0;
+            &:hover{
+              text-decoration: none;
+              background-color: #13407c;
+            }
+          }
+        }
+      }
+    }
+    article{
+      overflow: hidden;
+      background-color: #13407c;
+      .tab-content{
+        padding: 35px;
+        line-height: 20px;
+      }
+    }
+  }
+}

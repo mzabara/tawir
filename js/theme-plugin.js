@@ -32,21 +32,16 @@ $(document).ready(function () {
             offsetLeft = $(this).offset().left - $('.nav').offset().left;
         }
     });
+    $('video').mediaelementplayer({
+        loop: true,
+        enableAutosize: true,
+        features: [],
+        alwaysShowControls: false,
+        success: function(mediaElement, originalNode) {
+            mediaElement.play();
+        }
+    })
 });
-
-//$(function(){
-//    $('.navbar-fixed-top').scrollElement({});
-//    var $root = $('html, body');
-//    $('a').click(function() {
-//        var href = $.attr(this, 'href');
-//        $root.animate({
-//            scrollTop: $(href).offset().top
-//        }, 500, function () {
-//            window.location.hash = href;
-//        });
-//        return false;
-//    });
-//});
 
 function initialize() {
     var map_canvas = document.getElementById('map_canvas');

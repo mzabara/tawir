@@ -8,7 +8,7 @@
     }
 
     .navbar-nav{
-      float: right!important;
+      float: none;
       width: auto;
       li{
         a{
@@ -49,8 +49,7 @@
     height: 600px;
   }
 }
-
-@media (max-width: @screen-sm-min) {
+/*@media (max-width: @screen-sm-min) {
   .navbar-fixed-top{
     .navbar-toggle{
       background-color: #13407c;
@@ -71,6 +70,134 @@
         a{
           padding-left: 7px;
           padding-right: 7px;
+        }
+      }
+    }
+  }
+}*/
+@media (max-width: @screen-sm-min) {
+  .navbar-fixed-top{
+    .navbar-toggle{
+      background-color: #13407c;
+      border-radius: 0;
+      .icon-bar{
+        background-color: #ffffff;
+      }
+    }
+
+    .navbar-brand{
+      margin-left: 15px!important;
+    }
+
+    .navbar-collapse{
+      background-color: #ffffff;
+      .navbar-nav{
+        float: none!important;
+        width: 100%;
+        margin: 0;
+        li{
+          margin: 10px;
+          display: block;
+          a{
+            padding: 10px;
+            display: block;
+            color: #13407c;
+            font-weight: 300;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+  #sectionStart{
+    padding-bottom: 0;
+    .addres-holder{
+      position: relative;
+      margin-top: 30px;
+      padding: 15px;
+    }
+  }
+  #sectionOurClients{
+    .clients-holder{
+      .row{
+        padding: 0;
+        .col-md-4{
+          padding: 15px 0;
+        }
+      }
+    }
+  }
+  #questionCarousel{
+    .question-holder{
+      height: auto;
+    }
+  }
+  footer{
+    .col-md-10{
+      margin-top: 10px;
+      padding-top: 10px;
+      border-top: solid 1px #ffffff;
+      li{
+        a{
+          font-weight: 300;
+        }
+      }
+    }
+  }
+}
+@media (max-width: @screen-xs) {
+  .navbar-fixed-top{
+    .navbar-collapse{
+      background-color: #ffffff;
+      .navbar-nav{
+        float: none!important;
+        width: 100%;
+        margin: 0;
+        li{
+          margin: 10px;
+          display: block;
+          a{
+            padding: 10px;
+            display: block;
+            color: #13407c;
+            font-weight: 300;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+  #sectionStart{
+    padding-bottom: 0;
+    .addres-holder{
+      position: relative;
+      margin-top: 30px;
+      padding: 15px;
+    }
+  }
+  #sectionOurClients{
+    .clients-holder{
+      .row{
+        padding: 0;
+        .col-md-4{
+          padding: 15px 0;
+        }
+      }
+    }
+  }
+  #questionCarousel{
+    .question-holder{
+      height: auto;
+    }
+  }
+  footer{
+    .col-md-10{
+      margin-top: 10px;
+      padding-top: 10px;
+      border-top: solid 1px #ffffff;
+      li{
+        a{
+          font-weight: 300;
         }
       }
     }

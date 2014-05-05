@@ -5,9 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Tawir</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <link rel="apple-touch-icon-precomposed" href="images/logo.gif">
+    <link href="images/logo.gif" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)" rel="apple-touch-startup-image">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/logo.gif">
+    <link href="images/logo.gif" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+    <link href="images/logo.gif" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/logo.gif">
+    <link href="images/logo.gif" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1)" rel="apple-touch-startup-image">
+    <link href="images/logo.gif" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 1)" rel="apple-touch-startup-image">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/logo.gif">
+    <link href="images/logo.gif" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+    <link href="images/logo.gif" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+
     <!-- Tawir styles -->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&subset=latin,cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
     <link href="css/inc.css" rel="stylesheet">
+    <!--<link href="css/mediaelementplayer.min.css" rel="stylesheet">-->
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -45,6 +60,9 @@
     </div><!-- /.container-fluid -->
 </nav>
 <section id="sectionStart" class="section-holder">
+    <div class="media-bg">
+        <video src="images/11.mp4" width="640" height="360" style="width: 100%; height: 100%;" id="player1"></video>
+    </div>
     <div class="container vcenter">
         <div class="section-content text-center">
             <div class="row">
@@ -224,18 +242,21 @@
                         <div class="row">
                             <div class="col-sm-4">
                                 <div class="question-holder">
+                                    <div class="question-num">1</div>
                                     <h4>Выполняете ли вы срочные заказы?</h4>
                                     <p>Быстрая оценка объёма работы или проекта. От 1 часа – «простое» задание, 3 дня масштабная  Быстрое выполнение работ. Проекта. От 1 часа – «простое» задание, 3 дня масштабная Быстрые результаты масштабных проектов. Что это действительно одна из важнейших точек </p>
                                 </div>
                             </div>
                             <div class="col-sm-4">
                                 <div class="question-holder">
+                                    <div class="question-num">2</div>
                                     <h4>Осуществляете ли доставку?</h4>
                                     <p>Быстрая оценка объёма работы или проекта. От 1 часа – «простое» задание, 3 дня масштабная  Быстрое выполнение работ. Проекта. От 1 часа – «простое» задание, 3 дня масштабная Быстрые результаты масштабных проектов. Что это действительно одна из важнейших точек </p>
                                 </div>
                             </div>
                             <div class="col-sm-4">
                                 <div class="question-holder">
+                                    <div class="question-num">3</div>
                                     <h4>У вас 100% предоплата или по частям?</h4>
                                     <p>Быстрая оценка объёма работы или проекта. От 1 часа – «простое» задание, 3 дня масштабная  Быстрое выполнение работ. Проекта. От 1 часа – «простое» задание, 3 дня масштабная Быстрые результаты масштабных проектов. Что это действительно одна из важнейших точек </p>
                                 </div>
@@ -244,18 +265,21 @@
                         <div class="row">
                             <div class="col-sm-4">
                                 <div class="question-holder">
+                                    <div class="question-num">4</div>
                                     <h4>Есть ли у вас скидки?</h4>
                                     <p>Быстрая оценка объёма работы или проекта. От 1 часа – «простое» задание, 3 дня масштабная  Быстрое выполнение работ. Проекта. От 1 часа – «простое» задание, 3 дня масштабная Быстрые результаты масштабных проектов. Что это действительно одна из важнейших точек </p>
                                 </div>
                             </div>
                             <div class="col-sm-4">
                                 <div class="question-holder">
+                                    <div class="question-num">5</div>
                                     <h4>Вы можете напечаатать по нашим эскизам?</h4>
                                     <p>Быстрая оценка объёма работы или проекта. От 1 часа – «простое» задание, 3 дня масштабная  Быстрое выполнение работ. Проекта. От 1 часа – «простое» задание, 3 дня масштабная Быстрые результаты масштабных проектов. Что это действительно одна из важнейших точек </p>
                                 </div>
                             </div>
                             <div class="col-sm-4">
                                 <div class="question-holder">
+                                    <div class="question-num">6</div>
                                     <h4>Технические характеристики DIGITAL 124</h4>
                                     <p>Быстрая оценка объёма работы или проекта. От 1 часа – «простое» задание, 3 дня масштабная  Быстрое выполнение работ. Проекта. От 1 часа – «простое» задание, 3 дня масштабная Быстрые результаты масштабных проектов. Что это действительно одна из важнейших точек </p>
                                 </div>
@@ -266,18 +290,21 @@
                         <div class="row">
                             <div class="col-sm-4">
                                 <div class="question-holder">
+                                    <div class="question-num">7</div>
                                     <h4>Выполняете ли вы срочные заказы?</h4>
                                     <p>Быстрая оценка объёма работы или проекта. От 1 часа – «простое» задание, 3 дня масштабная  Быстрое выполнение работ. Проекта. От 1 часа – «простое» задание, 3 дня масштабная Быстрые результаты масштабных проектов. Что это действительно одна из важнейших точек </p>
                                 </div>
                             </div>
                             <div class="col-sm-4">
                                 <div class="question-holder">
+                                    <div class="question-num">8</div>
                                     <h4>Осуществляете ли доставку?</h4>
                                     <p>Быстрая оценка объёма работы или проекта. От 1 часа – «простое» задание, 3 дня масштабная  Быстрое выполнение работ. Проекта. От 1 часа – «простое» задание, 3 дня масштабная Быстрые результаты масштабных проектов. Что это действительно одна из важнейших точек </p>
                                 </div>
                             </div>
                             <div class="col-sm-4">
                                 <div class="question-holder">
+                                    <div class="question-num">9</div>
                                     <h4>У вас 100% предоплата или по частям?</h4>
                                     <p>Быстрая оценка объёма работы или проекта. От 1 часа – «простое» задание, 3 дня масштабная  Быстрое выполнение работ. Проекта. От 1 часа – «простое» задание, 3 дня масштабная Быстрые результаты масштабных проектов. Что это действительно одна из важнейших точек </p>
                                 </div>
@@ -286,18 +313,21 @@
                         <div class="row">
                             <div class="col-sm-4">
                                 <div class="question-holder">
+                                    <div class="question-num">10</div>
                                     <h4>Есть ли у вас скидки?</h4>
                                     <p>Быстрая оценка объёма работы или проекта. От 1 часа – «простое» задание, 3 дня масштабная  Быстрое выполнение работ. Проекта. От 1 часа – «простое» задание, 3 дня масштабная Быстрые результаты масштабных проектов. Что это действительно одна из важнейших точек </p>
                                 </div>
                             </div>
                             <div class="col-sm-4">
                                 <div class="question-holder">
+                                    <div class="question-num">11</div>
                                     <h4>Вы можете напечаатать по нашим эскизам?</h4>
                                     <p>Быстрая оценка объёма работы или проекта. От 1 часа – «простое» задание, 3 дня масштабная  Быстрое выполнение работ. Проекта. От 1 часа – «простое» задание, 3 дня масштабная Быстрые результаты масштабных проектов. Что это действительно одна из важнейших точек </p>
                                 </div>
                             </div>
                             <div class="col-sm-4">
                                 <div class="question-holder">
+                                    <div class="question-num">12</div>
                                     <h4>Технические характеристики DIGITAL 124</h4>
                                     <p>Быстрая оценка объёма работы или проекта. От 1 часа – «простое» задание, 3 дня масштабная  Быстрое выполнение работ. Проекта. От 1 часа – «простое» задание, 3 дня масштабная Быстрые результаты масштабных проектов. Что это действительно одна из важнейших точек </p>
                                 </div>
@@ -383,6 +413,7 @@
 <script src="js/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
+<script src="js/mediaelement-and-player.min.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
 <script src="js/theme-plugin.js"></script>
 </body>
