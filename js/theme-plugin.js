@@ -32,17 +32,36 @@ $(document).ready(function () {
             offsetLeft = $(this).offset().left - $('.nav').offset().left;
         }
     });
-    $('video').mediaelementplayer({
-        loop: true,
-        enableAutosize: true,
-        features: [],
-        alwaysShowControls: false,
-        success: function(mediaElement, originalNode) {
-            mediaElement.play();
-        }
-    })
-});
+    MediaElement('player1', {success: function(me) {
 
+        me.play();
+
+        me.addEventListener('timeupdate', function() {
+            document.getElementById('time').innerHTML = me.currentTime;
+        }, false);
+
+        document.getElementById('pp')['onclick'] = function() {
+            if (me.paused)
+                me.play();
+            else
+                me.pause();
+        };
+
+    }});
+//    new MediaElementPlayer('video', {
+//        enablePluginDebug: false,
+//        loop: true,
+//        videoWidth: '100%',
+//        videoHeight: '100%',
+//        enableAutosize: true,
+//        alwaysShowHours: false,
+//        showTimecodeFrameCount: false,
+//        features: [],
+//        success: function(media, node, player) {
+//            media.play();
+//        }
+//    });
+});
 function initialize() {
     var map_canvas = document.getElementById('map_canvas');
     var map_options = {
