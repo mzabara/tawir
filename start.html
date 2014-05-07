@@ -3,7 +3,6 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Tawir</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
@@ -18,7 +17,6 @@
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/logo.gif">
     <link href="images/logo.gif" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
     <link href="images/logo.gif" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
-
     <!-- Tawir styles -->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&subset=latin,cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
     <link href="css/inc.css" rel="stylesheet">
@@ -49,26 +47,26 @@
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse text-center" id="navbar-collapse">
-            <a href="#addOrder" class="btn-order hidden">Сделать заказ</a>
             <ul class="nav navbar-nav">
                 <li><a href="#sectionOurServices">Наши услуги</a></li>
                 <li><a href="#sectionWhyWe">О нас</a></li>
                 <li><a href="#sectionOurClients">Наши клиенты</a></li>
                 <li><a href="#sectionQuestion">Вопросы</a></li>
                 <li><a href="#sectionContacts">Контакты</a></li>
+                <li><button data-toggle="modal" data-target="#addOrder" class="btn-order">Сделать заказ</button></li>
             </ul>
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
 </nav>
+<div class="media-bg">
+    <video width="2030" height="1150" src="images/media/1.mp4" type="video/mp4" id="player1"></video>
+</div>
 <section id="sectionStart" class="section-holder">
-    <div class="media-bg">
-        <video width="640" height="360" id="player1" style="width: 100%; height: 100%;" src="images/6206249.mp4" type="video/mp4"></video>
-    </div>
     <div class="container vcenter">
         <div class="section-content text-center">
             <div class="row">
-                <div class="col-md-6 col-md-offset-3 text-center">
-                    <img src="images/logo-big.png" alt="" class="img-responsive logo-big"/>
+                <div class="col-md-12 text-center">
+                    <img src="images/logo-big.png" alt="" class="logo-big"/>
                     <p class="intro-text">Все необходимые сведения о логотипе, его версиях для разных задач и остальных элементах, из которых складывается фирменный стиль «Капсидеи», собраны в руководстве.</p>
                     <a href="#" class="btn-view">Смотреть видео-презентацию</a>
                 </div>
@@ -84,10 +82,10 @@
             <div class="w-devider"></div>
             <div class="row">
                 <div class="col-md-6">
-                    <p>hy do you need to invest in a community? So that they can get to know you, like you – and become so loyal that they’ll always pick you over your competitors! We work with your marketing team to give your company an engaging on-brand presence over multiple social media channels. Not only are Socialites engagement experts, we also know our way around a budget, so we optimise every dollar you spend for maximum ROI.</p>
+                    <p>hy do you need to invest in a community? So that they can get to know you, like you – and become so loyal that they’ll always pick you over your competitors!</p>
                 </div>
                 <div class="col-md-6">
-                    <p>hy do you need to invest in a community? So that they can get to know you, like you – and become so loyal that they’ll always pick you over your competitors! We work with your marketing team to give your company an engaging on-brand presence over multiple social media channels. Not only are Socialites engagement experts, we also know our way around a budget, so we optimise every dollar you spend for maximum ROI.</p>
+                    <p>hy do you need to invest in a community? So that they can get to know you, like you – and become so loyal that they’ll always pick you over your competitors!</p>
                 </div>
             </div>
             <div class="services-list">
@@ -153,7 +151,7 @@
             <h1 class="light-heading text-center">Почему мы</h1>
             <div class="w-devider"></div>
             <div class="row">
-                <div class="col-md-3 text-right">
+                <div class="col-md-6 text-right">
                     <h2 class="light-heading">Быстро</h2>
                     <p>Быстрая оценка объёма работы или проекта. От 1 часа – «простое» задание, 3 дня масштабная</p>
                     <p>Быстрое выполнение работ. проекта. От 1 часа – «простое» задание, 3 дня масштабная</p>
@@ -163,10 +161,7 @@
                     <p>Быстрое выполнение работ. проекта. От 1 часа – «простое» задание, 3 дня масштабная</p>
                     <p>Быстрые результаты масштабных проектов. Что это действительно одна из важнейших точек</p>
                 </div>
-                <div class="col-md-6 text-center">
-                    <img src="images/whyWeBg.png" alt="" class="img-responsive"/>
-                </div>
-                <div class="col-md-3">
+                <div class="col-md-6">
                     <h2 class="light-heading">Выгодно</h2>
                     <p>Быстрая оценка объёма работы или проекта. От 1 часа – «простое» задание, 3 дня масштабная</p>
                     <p>Быстрое выполнение работ. проекта. От 1 часа – «простое» задание, 3 дня масштабная</p>
@@ -234,7 +229,6 @@
                 <ol class="carousel-indicators">
                     <li data-target="#questionCarousel" data-slide-to="0" class="active"></li>
                     <li data-target="#questionCarousel" data-slide-to="1"></li>
-                    <li data-target="#questionCarousel" data-slide-to="2"></li>
                 </ol>
 
                 <!-- Wrapper for slides -->
@@ -410,6 +404,56 @@
         </div>
     </div>
 </footer>
+<!-- Modal -->
+<div class="modal fade" id="addOrder" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h3 class="modal-title">Оставить заявку</h3>
+            </div>
+            <div class="modal-body">
+                <p>Для того, чтобы узнать точную стоимость Вашего проекта по созданию сайта, позвоните нам по телефону +7 (495) 363-40-60, или оставьте заявку, используя форму ниже, и мы свяжемся с Вами в ближайшее время!</p>
+                <form role="form">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Ваше имя">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" placeholder="Ваше email">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Телефон для связи">
+                            </div>
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-md-5">
+                                        <img src="images/captcha.jpg" alt=""/>
+                                    </div>
+                                    <div class="col-md-2 text-center">
+                                        <a href="" class="icon-refresh"><img src="images/refresh.png" alt=""/></a>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <input type="text" class="form-control" placeholder="Введите код">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <textarea class="form-control" placeholder="Сообщение"></textarea>
+                            </div>
+                            <div class="form-group text-right">
+                                <input type="submit" class="btn-order" value="Отправить"/>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
 <!-- jQuery -->
 <script src="js/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->

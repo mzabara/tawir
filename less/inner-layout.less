@@ -4,8 +4,8 @@
       position: relative;
       float: left;
       width: 31%;
-      background: url("../images/bg/section-1-bg.jpg") 0 0 repeat;
       height: 100vh;
+      z-index: 3;
       .addres-holder{
         position: absolute;
         width: 250px;
@@ -26,7 +26,7 @@
           &.active{
             a{
               border: none;
-              background-color: #13407c;
+              background-color: rgba(19,64,124,.6);
               color: #ffffff;
             }
           }
@@ -47,11 +47,17 @@
       }
     }
     article{
+      position: relative;
+      height: 100vh;
+      z-index: 3;
       overflow: hidden;
-      background-color: #13407c;
+      background-color: rgba(19,64,124,.6);
       .tab-content{
         padding: 35px;
         line-height: 20px;
+        .tab-pane-content-holder{
+          width: 550px;
+        }
       }
     }
   }

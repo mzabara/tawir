@@ -1,8 +1,5 @@
-// get the value of the bottom of the #main element by adding the offset of that element plus its height, set it as a variable
 var mainbottom = $('#sectionStart').offset().top + $('#sectionStart').height();
-// on scroll,
 $(window).on('scroll',function(){
-    // we round here to reduce a little workload
     stop = Math.round($(window).scrollTop());
     if (stop > mainbottom) {
         $('.navbar-fixed-top').addClass('white-theme');
@@ -11,7 +8,35 @@ $(window).on('scroll',function(){
     }
 });
 
+//var resizeVideo = function(obj) {
+//    var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0)
+//    var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0)
+//    obj.css({width: w, height: h});
+//}
+//
+//$(window).resize(function() {
+//    resize_timer = setTimeout(function() {
+//        resizeVideo($('#player1'));
+//        resizeVideo($('#player2'));
+//        resizeVideo($('#player3'));
+//        resizeVideo($('#player4'));
+//        clearTimeout(resize_timer);
+//    }, 200);
+//});
+
+function initialize() {
+    var map_canvas = document.getElementById('map_canvas');
+    var map_options = {
+        center: new google.maps.LatLng(55.753718, 37.558005),
+        zoom: 17,
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+    }
+    var map = new google.maps.Map(map_canvas, map_options)
+}
+google.maps.event.addDomListener(window, 'load', initialize);
+
 $(document).ready(function () {
+
     $('.navbar-fixed-top a[href^="#"]').on('click', function (e) {
         e.preventDefault();
 
@@ -32,43 +57,27 @@ $(document).ready(function () {
             offsetLeft = $(this).offset().left - $('.nav').offset().left;
         }
     });
-    MediaElement('player1', {success: function(me) {
 
-        me.play();
-
-        me.addEventListener('timeupdate', function() {
-            document.getElementById('time').innerHTML = me.currentTime;
-        }, false);
-
-        document.getElementById('pp')['onclick'] = function() {
-            if (me.paused)
-                me.play();
-            else
-                me.pause();
-        };
-
-    }});
-//    new MediaElementPlayer('video', {
-//        enablePluginDebug: false,
-//        loop: true,
-//        videoWidth: '100%',
-//        videoHeight: '100%',
-//        enableAutosize: true,
-//        alwaysShowHours: false,
-//        showTimecodeFrameCount: false,
-//        features: [],
-//        success: function(media, node, player) {
-//            media.play();
-//        }
-//    });
+    new MediaElement('player1',{
+        defaultVideoWidth: '1000',
+        defaultVideoHeight: '1000',
+        success: function(mediaElement) {
+            mediaElement.addEventListener('ended', function(e) {
+                mediaElement.play();
+            }, false);
+            mediaElement.play();
+//            resizeVideo($(mediaElement))
+        }
+    });
+    new MediaElement('player2',{
+        defaultVideoWidth: '1920',
+        defaultVideoHeight: '1150',
+        success: function(mediaElement) {
+            mediaElement.addEventListener('ended', function(e) {
+                mediaElement.play();
+            }, false);
+            mediaElement.play();
+//            resizeVideo($(mediaElement))
+        }
+    });
 });
-function initialize() {
-    var map_canvas = document.getElementById('map_canvas');
-    var map_options = {
-        center: new google.maps.LatLng(55.753718, 37.558005),
-        zoom: 17,
-        mapTypeId: google.maps.MapTypeId.ROADMAP
-    }
-    var map = new google.maps.Map(map_canvas, map_options)
-}
-google.maps.event.addDomListener(window, 'load', initialize);
