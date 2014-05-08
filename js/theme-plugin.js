@@ -9,23 +9,6 @@ if($('#sectionStart').length > 0) {
         }
     });
 }
-//var resizeVideo = function(obj) {
-//    var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0)
-//    var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0)
-//    obj.css({width: w, height: h});
-//}
-//
-//$(window).resize(function() {
-//    resize_timer = setTimeout(function() {
-//        resizeVideo($('#player1'));
-//        resizeVideo($('#player2'));
-//        resizeVideo($('#player3'));
-//        resizeVideo($('#player4'));
-//        clearTimeout(resize_timer);
-//    }, 200);
-//});
-
-
 if($('#map_canvas').length > 0) {
     function initialize() {
         var map_canvas = document.getElementById('map_canvas');

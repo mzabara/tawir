@@ -123,7 +123,6 @@ body{
   font-size: 13px;
   min-width: 970px;
   &.inner-page-holder{
-    margin-bottom: -74px;
     footer{
       position: absolute;
       bottom: 0;
@@ -159,6 +158,15 @@ body{
   .clearfix;
 }
 
+h1.light-heading{
+  font-weight: 300;
+  font-size: 30px;
+}
+h2.light-heading{
+  font-weight: 300;
+  font-size: 20px;
+}
+
 .section-holder{
   position: relative;
   z-index: 3;
@@ -185,13 +193,9 @@ body{
   }
   h1.light-heading{
     text-transform: uppercase;
-    font-weight: 300;
-    font-size: 30px;
   }
   h2.light-heading{
     text-transform: uppercase;
-    font-weight: 300;
-    font-size: 20px;
   }
 }
 
@@ -443,6 +447,10 @@ footer{
 }
 
 #addOrder{
+  overflow-y: auto;
+  .modal-dialog{
+    margin: 10px auto;
+  }
   .modal-content{
     border-radius: 0;
     .modal-header{
@@ -500,4 +508,8 @@ footer{
       }
     }
   }
+}
+
+.modal-backdrop{
+  overflow-y: visible!important;
 }

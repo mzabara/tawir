@@ -32,80 +32,94 @@
 </head>
 <body class="inner-page-holder">
 <nav class="navbar navbar-default" role="navigation">
-    <div class="container">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#sectionStart">
-                <img src="images/brand.png" alt="Tawir Media" class="img-responsive"/>
-            </a>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-4">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header pull-right">
+                    <a class="navbar-brand" href="#sectionStart">
+                        <img src="images/brand.png" alt="Tawir Media" class="img-responsive"/>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-8">
+                <ul class="nav navbar-nav">
+                    <li><a href="#sectionOurServices">Наши услуги</a></li>
+                    <li><a href="#sectionWhyWe">О нас</a></li>
+                    <li><a href="#sectionOurClients">Наши клиенты</a></li>
+                    <li><a href="#sectionQuestion">Вопросы</a></li>
+                    <li><a href="#sectionContacts">Контакты</a></li>
+                    <li class="hidden"><button data-toggle="modal" data-target="#addOrder" class="btn-order">Сделать заказ</button></li>
+                </ul>
+            </div>
         </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse text-center" id="navbar-collapse">
-            <ul class="nav navbar-nav">
-                <li><a href="">Наши услуги</a></li>
-                <li><a href="">О нас</a></li>
-                <li><a href="">Наши клиенты</a></li>
-                <li><a href="">Вопросы</a></li>
-                <li><a href="">Контакты</a></li>
-            </ul>
-        </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
 </nav>
 <div class="media-bg">
     <video height="1100" src="images/media/1.mp4" type="video/mp4" id="player2"></video>
 </div>
 <main>
-    <aside>
-          <ul class="section-nav nav-tabs">
-              <li class="active"><a href="#printingHouse" data-toggle="tab">Типография</a></li>
-              <li><a href="">Сувенирная продукция</a></li>
-              <li><a href="">Реклама в СМИ</a></li>
-              <li><a href="">Реклама на транспорте</a></li>
-              <li><a href="">BTL</a></li>
-              <li><a href="">Наружная реклама</a></li>
-              <li><a href="">Разработка сайтов</a></li>
-              <li><a href="">Продвижение сайтов</a></li>
-          </ul>
-    </aside>
-    <article>
-        <div class="tab-content">
-            <div class="tab-pane active" id="printingHouse">
-                <div class="tab-pane-content-holder">
-                    Реклама на улицах города
-                    Достаточно просто, а, соответственно, по низкой стоимости можно создать обычный ролик с ключевыми данными о заказчике. В цену такого продукта входит лишь работа над соответствующим текстом и оплата диктору, произносящему его в эфире. Но даже такой незамысловатый метод будет иметь хороший эффект из-за того, что вся информация транслируется аудитории, на которую рассчитывает клиент.
-                    Основываясь на многолетнем опыте и ваших пожеланиях, рекламное агентство TAWIR MEDIA поможет вам принять правильное решение. Реклама на радио- это не только эффективный метод привлечения клиентов, но и экономически привлекательный инструмент. Будьте ближе к тем, для кого Вы работаете!
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-4">
+                <ul class="section-nav nav-tabs" data-spy="affix" data-offset-top="60" data-offset-bottom="200">
+                    <li class="active"><a href="#printingHouse" data-toggle="tab">Типография</a></li>
+                    <li><a href="">Сувенирная продукция</a></li>
+                    <li><a href="">Реклама в СМИ</a></li>
+                    <li><a href="">Реклама на транспорте</a></li>
+                    <li><a href="">BTL</a></li>
+                    <li><a href="">Наружная реклама</a></li>
+                    <li><a href="">Разработка сайтов</a></li>
+                    <li><a href="">Продвижение сайтов</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-8">
+                <div class="tab-content">
+                    <div class="tab-pane active" id="printingHouse">
+                        <ul class="section-sub-nav nav-tabs">
+                            <li><a href="#corpBlank" data-toggle="tab">Фирменные бланки</a></li>
+                            <li><a href="">Буклеты, брошюры, каталоги</a></li>
+                            <li><a href="">Календари</a></li>
+                            <li><a href="">Открытки, приглашения</a></li>
+                            <li><a href="">Папки</a></li>
+                            <li><a href="">Конверты</a></li>
+                            <li><a href="">Наклейки</a></li>
+                            <li><a href="">Стикеры</a></li>
+                            <li><a href="">Воблеры</a></li>
+                            <li><a href="">Пакеты</a></li>
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="corpBlank">
+                                ddd
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+            </div>
         </div>
-    </article>
+    </div>
 </main>
 <footer>
     <div class="container">
         <div class="row">
-            <div class="col-md-2">
+            <div class="col-lg-2">
                 © 2014 TAWIR MEDIA
             </div>
-            <ul class="col-md-10">
-                <li class="col-md-3">
+            <ul class="col-lg-10">
+                <li class="col-lg-3">
                     <p><a href="">полиграфия</a></p>
                     <p><a href="">сувенирная продукция</a></p>
                 </li>
-                <li class="col-md-3">
+                <li class="col-lg-3">
                     <p><a href="">реклама в сми</a></p>
                     <p><a href="">btl</a></p>
                 </li>
-                <li class="col-md-3">
+                <li class="col-lg-3">
                     <p><a href="">реклама на транспорте</a></p>
                     <p><a href="">наружная реклама</a></p>
                 </li>
-                <li class="col-md-3">
+                <li class="col-lg-3">
                     <p><a href="">разработка сайтов</a></p>
                     <p><a href="">продвижение сайтов</a></p>
                 </li>
@@ -113,6 +127,56 @@
         </div>
     </div>
 </footer>
+<!-- Modal -->
+<div class="modal fade" id="addOrder" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h3 class="modal-title">Оставить заявку</h3>
+            </div>
+            <div class="modal-body">
+                <p>Для того, чтобы узнать точную стоимость Вашего проекта по созданию сайта, позвоните нам по телефону +7 (495) 363-40-60, или оставьте заявку, используя форму ниже, и мы свяжемся с Вами в ближайшее время!</p>
+                <form role="form">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Ваше имя">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" placeholder="Ваше email">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Телефон для связи">
+                            </div>
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-lg-5">
+                                        <img src="images/captcha.jpg" alt=""/>
+                                    </div>
+                                    <div class="col-lg-2 text-center">
+                                        <a href="" class="icon-refresh"><img src="images/refresh.png" alt=""/></a>
+                                    </div>
+                                    <div class="col-lg-5">
+                                        <input type="text" class="form-control" placeholder="Введите код">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                <textarea class="form-control" placeholder="Сообщение"></textarea>
+                            </div>
+                            <div class="form-group text-right">
+                                <input type="submit" class="btn-order" value="Отправить"/>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
 <!-- jQuery -->
 <script src="js/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->

@@ -1,63 +1,76 @@
 .inner-page-holder{
   main{
-    aside{
+    position: relative;
+    z-index: 2;
+
+    .section-nav{
       position: relative;
-      float: left;
-      width: 31%;
-      height: 100vh;
-      z-index: 3;
-      .addres-holder{
-        position: absolute;
-        width: 250px;
-        bottom: 85px;
-        right: 0;
-      }
-      .section-nav{
-        position: relative;
-        top: 40px;
-        float: right;
-        width: 225px;
-        margin: 0;
-        padding: 0;
-        list-style-type: none;
-        border-bottom:none;
-        li{
-          width: 100%;
-          &.active{
-            a{
-              border: none;
-              background-color: rgba(19,64,124,.6);
-              color: #ffffff;
-            }
-          }
+      top: 35px;
+      float: right;
+      width: 225px;
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+      border-bottom:none;
+      li{
+        width: 100%;
+        &.active{
           a{
-            display: block;
-            padding: 10px;
-            color: #ffffff;
-            font-size: 14px;
             border: none;
-            border-radius: 0;
-            margin: 0;
-            &:hover{
-              text-decoration: none;
-              background-color: #13407c;
-            }
+            background-color: rgba(19,64,124,.6);
+            color: #ffffff;
+          }
+        }
+        a{
+          display: block;
+          padding: 10px;
+          color: #ffffff;
+          font-size: 14px;
+          border: none;
+          border-radius: 0;
+          margin: 0;
+          &:hover{
+            text-decoration: none;
+            background-color: #13407c;
           }
         }
       }
     }
-    article{
-      position: relative;
-      height: 100vh;
-      z-index: 3;
-      overflow: hidden;
-      background-color: rgba(19,64,124,.6);
-      .tab-content{
-        padding: 35px;
-        line-height: 20px;
-        .tab-pane-content-holder{
-          width: 550px;
+
+    .tab-content{
+      padding: 30px;
+      line-height: 20px;
+      .nav-tabs{
+        &.section-sub-nav{
+          margin: 0;
+          padding: 0;
+          list-style-type: none;
+          border-bottom: none;
+          .clearfix;
+          li{
+            margin: 0;
+            a{
+              border: none;
+              border-radius:0;
+              color: #ffffff;
+              font-size: 13px;
+              &:hover{
+                border: none;
+              }
+            }
+            &.active{
+              a{
+                font-weight: 500;
+                background: none;
+              }
+            }
+          }
         }
+      }
+      .tab-pane-content-holder{
+        width: 600px;
+        font-size: 14px;
+        line-height: 20px;
       }
     }
   }
