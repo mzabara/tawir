@@ -1,7 +1,46 @@
 .inner-page-holder{
+  h1.light-heading{
+    font-weight: 300;
+    font-size: 26px!important;
+  }
+  h2.light-heading{
+    font-weight: 300;
+    font-size: 26px;
+  }
   main{
     position: relative;
     z-index: 2;
+    padding-top: 60px;
+    padding-bottom: 74px;
+    height: 100%;
+    .vh100{
+      min-height: 100%;
+      height: auto;
+      height: 100%;
+      &.row{
+        height: 100%!important;
+      }
+    }
+    .aside,
+    .main{
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    .aside{
+      position: relative;
+      .addres-holder{
+        position: absolute;
+        right: 15px;
+        bottom: 30px;
+        font-size: 14px;
+        font-weight: 300;
+      }
+    }
+
+    .main{
+      background-color: rgba(19,64,124,.6);
+    }
 
     .section-nav{
       position: relative;
@@ -23,7 +62,7 @@
         }
         a{
           display: block;
-          padding: 10px;
+          padding:5px 10px;
           color: #ffffff;
           font-size: 14px;
           border: none;
@@ -38,17 +77,30 @@
     }
 
     .tab-content{
-      padding: 30px;
-      line-height: 20px;
+      &.second-level{
+        line-height: 20px;
+        .tab-pane{
+          padding: 30px;
+          height: 100%;
+        }
+      }
       .nav-tabs{
         &.section-sub-nav{
-          margin: 0;
+          margin: 15px 0;
           padding: 0;
           list-style-type: none;
           border-bottom: none;
           .clearfix;
           li{
-            margin: 0;
+            padding: 0 20px 0 0;
+            background: url("../images/dot.png") 100% 50% no-repeat;
+            &:first-child{
+              padding-left: 0;
+            }
+            &:last-child{
+              padding-right: 0;
+              background: none;
+            }
             a{
               border: none;
               border-radius:0;
@@ -68,9 +120,16 @@
         }
       }
       .tab-pane-content-holder{
-        width: 600px;
-        font-size: 14px;
         line-height: 20px;
+      }
+      #printingHouse{
+        .section-bg{
+          position: absolute;
+          top: 0;
+          left: auto;
+          right: 0;
+          background: url("../images/bg/typo.png") no-repeat 0 0;
+        }
       }
     }
   }

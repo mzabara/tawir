@@ -54,7 +54,6 @@ $(document).ready(function () {
                     mediaElement.play();
                 }, false);
                 mediaElement.play();
-    //            resizeVideo($(mediaElement))
             }
         });
     }
@@ -68,7 +67,6 @@ $(document).ready(function () {
                     mediaElement.play();
                 }, false);
                 mediaElement.play();
-    //            resizeVideo($(mediaElement))
             }
         });
     }

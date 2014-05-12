@@ -34,22 +34,21 @@
 <nav class="navbar navbar-default" role="navigation">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-lg-4">
+            <div class="col-lg-3 nopadding">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header pull-right">
-                    <a class="navbar-brand" href="#sectionStart">
+                    <a class="navbar-brand" href="start.html#sectionStart">
                         <img src="images/brand.png" alt="Tawir Media" class="img-responsive"/>
                     </a>
                 </div>
             </div>
-            <div class="col-lg-8">
+            <div class="col-lg-9">
                 <ul class="nav navbar-nav">
-                    <li><a href="#sectionOurServices">Наши услуги</a></li>
-                    <li><a href="#sectionWhyWe">О нас</a></li>
-                    <li><a href="#sectionOurClients">Наши клиенты</a></li>
-                    <li><a href="#sectionQuestion">Вопросы</a></li>
-                    <li><a href="#sectionContacts">Контакты</a></li>
-                    <li class="hidden"><button data-toggle="modal" data-target="#addOrder" class="btn-order">Сделать заказ</button></li>
+                    <li><a href="start.html#sectionOurServices">Наши услуги</a></li>
+                    <li><a href="start.html#sectionWhyWe">О нас</a></li>
+                    <li><a href="start.html#sectionOurClients">Наши клиенты</a></li>
+                    <li><a href="start.html#sectionQuestion">Вопросы</a></li>
+                    <li><a href="start.html#sectionContacts">Контакты</a></li>
                 </ul>
             </div>
         </div>
@@ -59,12 +58,12 @@
     <video height="1100" src="images/media/1.mp4" type="video/mp4" id="player2"></video>
 </div>
 <main>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-4">
+    <div class="container-fluid vh100">
+        <div class="row vh100">
+            <div class="col-lg-3 aside vh100">
                 <ul class="section-nav nav-tabs" data-spy="affix" data-offset-top="60" data-offset-bottom="200">
-                    <li class="active"><a href="#printingHouse" data-toggle="tab">Типография</a></li>
-                    <li><a href="">Сувенирная продукция</a></li>
+                    <li><a href="#printingHouse" data-toggle="tab">Типография</a></li>
+                    <li><a href="#suvenir" data-toggle="tab" data-target="sectionNavContent">Сувенирная продукция</a></li>
                     <li><a href="">Реклама в СМИ</a></li>
                     <li><a href="">Реклама на транспорте</a></li>
                     <li><a href="">BTL</a></li>
@@ -72,10 +71,14 @@
                     <li><a href="">Разработка сайтов</a></li>
                     <li><a href="">Продвижение сайтов</a></li>
                 </ul>
+                <div class="addres-holder">
+                    123610 Москва<br>Краснопресненская наб. д. 12,<br>тел. +7 495 363 40 60
+                </div>
             </div>
-            <div class="col-lg-8">
-                <div class="tab-content">
-                    <div class="tab-pane active" id="printingHouse">
+            <div class="col-lg-9 main vh100">
+                <div class="tab-content second-level vh100" id="sectionNavContent">
+                    <div class="tab-pane fade" id="printingHouse">
+                        <div class="section-bg"></div>
                         <ul class="section-sub-nav nav-tabs">
                             <li><a href="#corpBlank" data-toggle="tab">Фирменные бланки</a></li>
                             <li><a href="">Буклеты, брошюры, каталоги</a></li>
@@ -88,10 +91,24 @@
                             <li><a href="">Воблеры</a></li>
                             <li><a href="">Пакеты</a></li>
                         </ul>
-                        <div class="tab-content">
-                            <div class="tab-pane active" id="corpBlank">
-                                ddd
-                            </div>
+                        <div class="tab-pane-content-holder">
+                            <h1 class="light-heading">Полиграфия &mdash; это не просто бумага и печать, это статус вашей компании.</h1>
+                            <p>Полиграфическая продукция - один из наименее затратных и достаточно эффективных маркетинговых инструментов. Рекламное агентство полного цикла TAWIR MEDIA реализует полный спектр полиграфических услуг. Сотрудники нашей компании ориентированы не только на качество исполнения заказов, но и скорость изготовления полиграфической продукции. Поэтому наша типография оснащена по последнему слову техники. Мы выполняем не только типовые виды работ, но и беремся за эксклюзивные заказы, и готовы предложить нестандартные полиграфические решения даже самым взыскательным клиентам. Свяжитесь с нами по телефону, электронной почте или через форму обратной связи и получите консультацию нашего менеджера по вашему будущему заказу.</p>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="suvenir">
+                        <ul class="section-sub-nav nav-tabs">
+                            <li><a href="#corpBlank" data-toggle="tab">Бизнес-сувениры</a></li>
+                            <li><a href="" data-toggle="tab">Бизнес-сувениры и подарки к праздникам</a></li>
+                            <li><a href="" data-toggle="tab">Промо-сувениры</a></li>
+                            <li><a href="" data-toggle="tab">Термополиграфия</a></li>
+                            <li><a href="" data-toggle="tab">Нанесение логотипа на сувенирную продукцию</a></li>
+                        </ul>
+                        <div class="tab-pane-content-holder">
+                            <h1 class="light-heading">Сувенирная продукция</h1>
+                            <p>В наши дни без фирменной сувенирной продукции не обходятся не только крупные компании, но и представители среднего и малого бизнеса. И это естественно, поскольку бизнес-подарки с символикой предприятия являются продолжительным напоминанием о вас вашим клиентам и партнерам. А чтобы это напоминание было позитивным, сувенирная продукция должна отличаться в первую очередь если не оригинальностью, то уж точно качеством. Поэтому рекламное агентство TAWIR MEDIA осуществляет строгий контроль на каждом этапе изготовления сувенирной продукции для своих клиентов. Произведенные нами бизнес- и промо-сувениры от шариковых ручек до эксклюзивных настольных часов ручной работы будут радовать ваших клиентов и партнеров долгие годы, а вас, в свою очередь, приятно удивят наши цены.</p>
+                            <p>Компания TAWIR MEDIA обеспечивает индивидуальный подход к каждому заказу. Поэтому мы не тратим ваше время на поиск сувениров в каталоге, а создаем для Вас презентацию с перечнем сувенирной продукции, заранее отобранной нашими менеджерами непосредственно под ваши цели и задачи.</p>
+                            <p>Запросить информацию по ассортименту сувенирной продукции и задать все интересующие вопросы вы можете, связавшись с нашим менеджером по телефону, электронной почте или через форму обратной связи.</p>
                         </div>
                     </div>
                 </div>
