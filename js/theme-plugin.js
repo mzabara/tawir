@@ -28,9 +28,14 @@ $(document).ready(function () {
         e.preventDefault();
 
         var target = this.hash,
-            $target = $(target);
+            $target = $(target),
+            offset_delta = 61;
+
+        if(target == '#sectionContacts') {
+            offset_delta = 0;
+        }
         $('html, body').stop().animate({
-            'scrollTop': $target.offset().top - 61
+            'scrollTop': $target.offset().top - offset_delta
         }, 900, 'swing', function () {
             window.location.hash = target;
         });
