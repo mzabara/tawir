@@ -29,9 +29,8 @@ $(document).ready(function () {
 
         var target = this.hash,
             $target = $(target);
-
         $('html, body').stop().animate({
-            'scrollTop': $target.offset().top - 0
+            'scrollTop': $target.offset().top - 61
         }, 900, 'swing', function () {
             window.location.hash = target;
         });
@@ -44,7 +43,6 @@ $(document).ready(function () {
             offsetLeft = $(this).offset().left - $('.nav').offset().left;
         }
     });
-
     if($('#player1').length > 0) {
         new MediaElement('player1',{
             defaultVideoWidth: '1000',

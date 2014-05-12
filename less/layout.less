@@ -120,13 +120,6 @@ html,body{
   max-width: none !important;
 }
 
-#sectionOurServices,
-#sectionWhyWe,
-#sectionOurClients,
-#sectionQuestion{
-  padding-top: 65px;
-}
-
 body{
   position: relative;
   background-color: #13407c;
@@ -184,7 +177,7 @@ h2.light-heading{
   position: relative;
   z-index: 3;
   min-height: 687px;
-  height: 100vh;
+  height: 100%;
   border-top: solid 1px rgba(255,255,255,.8)!important;
   .container{
     position: relative;
@@ -356,18 +349,19 @@ h2.light-heading{
   .question-holder{
     position:relative;
     padding: 15px;
-    height: 288px;
+    height: 245px;
     margin: 15px 0;
     background: url("../images/qbg.png") no-repeat 100% 100%;
-    h4{
-      font-size: 20px;
+    h2{
+      font-size: 18px;
       font-weight: 300;
       color: #13407c;
       margin-top: 0;
     }
     p{
       color: #464646;
-      font-size: 14px;
+      padding: 0 40px 0 0;
+      font-size: 13px;
     }
     .question-num{
       position: absolute;
@@ -405,7 +399,6 @@ h2.light-heading{
 }
 
 #sectionContacts{
-  height: 92%;
   .contact-info-holder{
     width: 100%;
     padding: 10px 25px 25px 25px;
@@ -435,7 +428,7 @@ h2.light-heading{
 }
 
 footer{
-  position: relative;
+  position: absolute;
   z-index: 3;
   bottom: 0;
   width: 100%;
