@@ -1,6 +1,15 @@
 $(document).ready(function() {
-    $('.section-nav a, .section-sub-nav a').bind('click', function (e) {
+    $('.section-nav a').bind('click', function (e) {
+        var hash = this.hash;
         e.preventDefault()
         $(this).tab('show')
+        $('div'+hash).children('.tab-pane-content-holder').show();
+        $('div'+hash).children('.tab-content').children('.tab-pane').removeClass('active');
+    });
+
+    $('.section-sub-nav a').bind('click', function (e) {
+        e.preventDefault()
+        $(this).tab('show');
+        $(this).closest('.tab-pane').children('.tab-pane-content-holder').hide()
     });
 });
