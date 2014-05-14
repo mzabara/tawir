@@ -29,7 +29,7 @@ $(document).ready(function () {
 
         var target = this.hash,
             $target = $(target),
-            offset_delta = 61;
+            offset_delta = 55;
 
         if(target == '#sectionContacts') {
             offset_delta = 0;

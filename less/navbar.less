@@ -41,6 +41,7 @@
       padding: 0;
     }
     .navbar-nav{
+      float: right;
       width: auto!important;
       li{
         &.active{
@@ -65,7 +66,7 @@
 }
 
 .navbar-default{
-  position: absolute;
+  .affix;
   width: 100%;
   z-index: 2;
   border-radius: 0;
@@ -73,29 +74,40 @@
   min-height: 60px;
   border-bottom: none;
   z-index: 5;
-  .navbar-brand{
-    display: block;
-    height: auto!important;
-    margin: 3px 0 0 0;
-    padding: 0;
-  }
 
-  .navbar-nav{
-    margin-top: 5px;
-    li{
-      a{
-        text-transform: uppercase;
-        font-size: 15px;
-        color: #13407c;
-        &:hover{
-          background: url("../images/inner_hover.gif") 50% 43px no-repeat;
-        }
-      }
-      &.active{
+  .navbar-header{
+    float: left;
+    text-align: right;
+    width: 20%;
+    .navbar-brand{
+      display: inline-block;
+      float: none!important;
+      height: auto!important;
+      margin: 3px 0 0 0;
+      padding: 0;
+    }
+  }
+  .navbar-nav-holder{
+    float: left;
+    width: 80%;
+    .navbar-nav{
+      float: right;
+      margin-top: 5px;
+      li{
         a{
-          background: url("../images/inner_actve.gif") 50% 43px no-repeat;
+          text-transform: uppercase;
+          font-size: 15px;
+          color: #13407c;
           &:hover{
-            background-color: transparent;
+            background: url("../images/inner_hover.gif") 50% 43px no-repeat;
+          }
+        }
+        &.active{
+          a{
+            background: url("../images/inner_actve.gif") 50% 43px no-repeat;
+            &:hover{
+              background-color: transparent;
+            }
           }
         }
       }
