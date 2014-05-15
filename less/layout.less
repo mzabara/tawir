@@ -341,9 +341,108 @@ h2.light-heading{
 }
 
 #sectionOurClients{
-  .clients-holder{
-    .row{
-      padding: 40px 0;
+  .clients-list-holder{
+    margin-top: 40px;
+    text-align: center;
+    ul{
+      display: inline-block;
+      padding: 0;
+      margin:0 -15px;
+      width: 800px;
+      list-style-type: none;
+      li{
+        float: left;
+        margin: 15px;
+        a{
+          display: block;
+          width: 170px;
+          height: 170px;
+          background-color: rgba(255,255,255,.15);
+          .clients{
+            display: block;
+            width: 170px;
+            height: 170px;
+            &.logo-1{
+              background: url("../images/clients/sprite.png") no-repeat 0 0;
+            }
+            &.logo-2{
+              background: url("../images/clients/sprite.png") no-repeat 0 -340px;
+            }
+            &.logo-3{
+              background: url("../images/clients/sprite.png") no-repeat 0 -680px;
+            }
+            &.logo-4{
+              background: url("../images/clients/sprite.png") no-repeat 0 -1020px;
+            }
+            &.logo-5{
+              background: url("../images/clients/sprite.png") no-repeat 0 -1360px;
+            }
+            &.logo-6{
+              background: url("../images/clients/sprite.png") no-repeat 0 -1700px;
+            }
+            &.logo-7{
+              background: url("../images/clients/sprite.png") no-repeat 0 -2040px;
+            }
+            &.logo-8{
+              background: url("../images/clients/sprite.png") no-repeat 0 -2380px;
+            }
+            &.logo-9{
+              background: url("../images/clients/sprite.png") no-repeat 0 -2720px;
+            }
+            &.logo-10{
+              background: url("../images/clients/sprite.png") no-repeat 0 -3060px;
+            }
+            &.logo-11{
+              background: url("../images/clients/sprite.png") no-repeat 0 -3400px;
+            }
+            &.logo-12{
+              background: url("../images/clients/sprite.png") no-repeat 0 -3740px;
+            }
+          }
+
+          &:hover{
+            background-color: #ffffff;
+            .clients{
+              &.logo-1{
+                background-position: 0 -170px;
+              }
+              &.logo-2{
+                background-position: 0 -510px;
+              }
+              &.logo-3{
+                background-position: 0 -850px;
+              }
+              &.logo-4{
+                background-position: 0 -1190px;
+              }
+              &.logo-5{
+                background-position: 0 -1530px;
+              }
+              &.logo-6{
+                background-position: 0 -1870px;
+              }
+              &.logo-7{
+                background-position: 0 -2210px;
+              }
+              &.logo-8{
+                background-position: 0 -2550px;
+              }
+              &.logo-9{
+                background-position: 0 -2890px;
+              }
+              &.logo-10{
+                background-position: 0 -3230px;
+              }
+              &.logo-11{
+                background-position: 0 -3570px;
+              }
+              &.logo-12{
+                background-position: 0 -3910px;
+              }
+            }
+          }
+        }
+      }
     }
   }
 }
