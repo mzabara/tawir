@@ -9,6 +9,11 @@ if($('#sectionStart').length > 0) {
         }
     });
 }
+
+$(window).on('load',function(){
+    scrollToHash(window.location.hash);
+});
+
 if($('#map_canvas').length > 0) {
     function initialize() {
         var map_canvas = document.getElementById('map_canvas');
@@ -22,23 +27,27 @@ if($('#map_canvas').length > 0) {
     google.maps.event.addDomListener(window, 'load', initialize);
 }
 
+function scrollToHash(hash) {
+    var target = hash,
+        $target = $(target),
+        offset_delta = 55;
+
+    if(target == '#sectionContacts') {
+        offset_delta = offset_delta = -($target.height() - $(window).height() + 2);
+    }
+    $('html, body').stop().animate({
+        'scrollTop': $target.offset().top - offset_delta
+    }, 900, 'swing', function () {
+        window.location.hash = target;
+    });
+}
+
 $(document).ready(function () {
 
     $('.navbar-fixed-top a[href^="#"]').on('click', function (e) {
         e.preventDefault();
 
-        var target = this.hash,
-            $target = $(target),
-            offset_delta = 55;
-
-        if(target == '#sectionContacts') {
-            offset_delta = 0;
-        }
-        $('html, body').stop().animate({
-            'scrollTop': $target.offset().top - offset_delta
-        }, 900, 'swing', function () {
-            window.location.hash = target;
-        });
+        scrollToHash(this.hash);
     });
     $('li').click(function() {
         if ( ! $(this).hasClass('active')) {
