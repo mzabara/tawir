@@ -11,7 +11,9 @@ if($('#sectionStart').length > 0) {
 }
 
 $(window).on('load',function(){
-    scrollToHash(window.location.hash);
+    var hash = window.location.hash;
+    scrollToHash(hash);
+    $('ul.nav a[href="'+hash+'"]').parent().addClass('active');
 });
 
 if($('#map_canvas').length > 0) {
