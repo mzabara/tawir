@@ -1,5 +1,5 @@
 if($('#sectionStart').length > 0) {
-    var mainbottom = $('.logo-big').offset().top;
+
     $(window).on('scroll',function(){
         stop = Math.round($(window).scrollTop());
         if (stop > mainbottom) {
@@ -18,13 +18,21 @@ $(window).on('load',function(){
 
 if($('#map_canvas').length > 0) {
     function initialize() {
+        var myLatlng = new google.maps.LatLng(55.754929, 37.557051);
+
         var map_canvas = document.getElementById('map_canvas');
         var map_options = {
-            center: new google.maps.LatLng(55.753718, 37.558005),
+            center: new google.maps.LatLng(55.754929, 37.557051),
             zoom: 17,
             mapTypeId: google.maps.MapTypeId.ROADMAP
         }
         var map = new google.maps.Map(map_canvas, map_options)
+
+        var marker = new google.maps.Marker({
+            position: myLatlng,
+            map: map,
+            title: 'Title'
+        });
     }
     google.maps.event.addDomListener(window, 'load', initialize);
 }
