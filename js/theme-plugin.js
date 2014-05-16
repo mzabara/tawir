@@ -45,10 +45,6 @@ function scrollToHash(hash) {
 }
 
 $(document).ready(function () {
-    $.html5Loader({
-        filesToLoad: './js/files.json'
-    });
-
     $('.navbar-fixed-top a[href^="#"]').on('click', function (e) {
         e.preventDefault();
         scrollToHash(this.hash);
