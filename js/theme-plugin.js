@@ -77,17 +77,4 @@ $(document).ready(function () {
             }
         });
     }
-
-    if($('#player2').length > 0) {
-        new MediaElement('player2',{
-            defaultVideoWidth: '1920',
-            defaultVideoHeight: '1150',
-            success: function(mediaElement) {
-                mediaElement.addEventListener('ended', function(e) {
-                    mediaElement.play();
-                }, false);
-                mediaElement.play();
-            }
-        });
-    }
 });

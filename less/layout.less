@@ -23,12 +23,14 @@ html,body{
     bottom: 0!important;
     left: 0!important;
     right: 0!important;
+    background-color: #13407c!important;
   }
 
   .mejs-container {
     position: relative;
     vertical-align: top;
     text-indent: 0;
+    background-color: #13407c!important;
   }
 
   .me-plugin {
@@ -213,10 +215,10 @@ h2.light-heading{
     vertical-align: top;
     margin-top: 20px;
     width: 200px;
-    padding: 15px;
+    padding: 10px;
     text-decoration: none;
     color: #ffffff;
-    border: solid 4px #ffffff;
+    border: solid 2px #ffffff;
     text-transform: uppercase;
     &:hover{
       background-color: #ffffff;
@@ -338,6 +340,15 @@ h2.light-heading{
     margin-top: 35px;
     text-transform: inherit!important;
   }
+  .row{
+    margin: 0 -30px;
+  }
+  .col-lg-6{
+    padding: 0 30px;
+    p{
+      text-align: justify;
+    }
+  }
 }
 
 #sectionOurClients{
@@ -348,11 +359,11 @@ h2.light-heading{
       display: inline-block;
       padding: 0;
       margin:0 -15px;
-      width: 800px;
+      width: 100%;
       list-style-type: none;
       li{
         float: left;
-        margin: 15px;
+        margin: 11px;
         a{
           display: block;
           width: 170px;
@@ -451,7 +462,7 @@ h2.light-heading{
   .question-holder{
     position:relative;
     padding: 15px;
-    height: 235px;
+    height: 212px;
     margin: 15px 0;
     background: url("../images/qbg.png") no-repeat 100% 100%;
     h2{
@@ -462,7 +473,7 @@ h2.light-heading{
     }
     p{
       color: #464646;
-      padding: 0 40px 0 0;
+      padding: 0 30px 0 0;
       font-size: 13px;
     }
     .question-num{
@@ -478,18 +489,23 @@ h2.light-heading{
   #questionCarousel{
     padding: 0 0 30px 0;
     .item{
-      .transition(~"opacity 0.7s ease-in-out");
+      .transition(~"opacity 0.4s ease-in-out");
       left: 0 !important;
+      opacity: 0;
+      &.active{
+        opacity: 1;
+        .transition(~"opacity 0.4s ease-in-out");
+      }
     }
     .next.left, .prev.right {
       opacity: 1;
       z-index: 1;
-      .transition(~"opacity 0.7s ease-in-out");
+      .transition(~"opacity 0.9s ease-in-out");
     }
     .active.left, .active.right {
       opacity: 0;
       z-index: 2;
-      .transition(~"opacity 0.7s ease-in-out");
+      .transition(~"opacity 0.9s ease-in-out");
     }
     .carousel-indicators{
       bottom: 0;
@@ -516,7 +532,11 @@ h2.light-heading{
 
 #sectionContacts{
   .contact-info-holder{
-    width: 100%;
+    position: relative;
+    top: 50%;
+    z-index: 4;
+    width: 500px;
+    margin: -124px auto 0 auto;
     padding: 10px 25px 25px 25px;
     background-color: rgba(255,255,255,.8);
     color: #274e8d;
@@ -528,7 +548,7 @@ h2.light-heading{
     }
     .phone-num{
       color: #333333;
-      font-size: 27px;
+      font-size: 24px;
       font-weight: 300;
     }
     .nav-contact{
