@@ -44,6 +44,10 @@ function scrollToHash(hash) {
     });
 }
 
+$.html5Loader({
+    filesToLoad:    'files.json'
+});
+
 $(document).ready(function () {
 
     $('.navbar-fixed-top a[href^="#"]').on('click', function (e) {
@@ -64,6 +68,8 @@ $(document).ready(function () {
             defaultVideoWidth: '1000',
             defaultVideoHeight: '1000',
             success: function(mediaElement) {
+                mediaElement.addEventListener('loadeddata', function() {
+                }, false);
                 mediaElement.addEventListener('ended', function(e) {
                     mediaElement.play();
                 }, false);
