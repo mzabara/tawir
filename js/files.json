@@ -1,0 +1,11 @@
+{
+    "files": [{
+        "type": "VIDEO",
+        "sources": {
+            "h264": {
+                "source": "../images/media/1.mp4",
+                "size": 1521298
+            }
+        }
+    }]
+}
