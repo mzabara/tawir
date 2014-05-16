@@ -44,11 +44,10 @@ function scrollToHash(hash) {
     });
 }
 
-$.html5Loader({
-    filesToLoad:    'files.json'
-});
-
 $(document).ready(function () {
+    $.html5Loader({
+        filesToLoad: './js/files.json'
+    });
 
     $('.navbar-fixed-top a[href^="#"]').on('click', function (e) {
         e.preventDefault();
