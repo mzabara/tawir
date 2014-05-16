@@ -873,6 +873,14 @@
         </div>
     </div>
 </div>
+<script type="text/javascript">
+    var loaderAnimation = $("#html5Loader").LoaderAnimation();
+
+    $.html5Loader({
+        filesToLoad: 'files.json',
+        onUpdate: loaderAnimation.update
+    });
+</script>
 <!-- jQuery -->
 <script src="js/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->

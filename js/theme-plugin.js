@@ -1,5 +1,5 @@
 if($('#sectionStart').length > 0) {
-    var mainbottom = $('.logo-big').offset().top + $('.logo-big').height();
+    var mainbottom = $('.logo-big').offset().top;
     $(window).on('scroll',function(){
         stop = Math.round($(window).scrollTop());
         if (stop > mainbottom) {
