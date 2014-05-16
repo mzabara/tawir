@@ -22,7 +22,7 @@ if($('#map_canvas').length > 0) {
 
         var map_canvas = document.getElementById('map_canvas');
         var map_options = {
-            center: new google.maps.LatLng(55.754929, 37.557051),
+            center: new google.maps.LatLng(55.753718, 37.558005),
             zoom: 17,
             mapTypeId: google.maps.MapTypeId.ROADMAP
         }
