@@ -33,7 +33,7 @@ function scrollToHash(hash) {
     var target = hash,
         $target = $(target),
         offset_delta = 55;
-
+    if(hash == '') return;
     if(target == '#sectionContacts') {
         offset_delta = offset_delta = -($target.height() - $(window).height() + 2);
     }
@@ -51,7 +51,6 @@ $(document).ready(function () {
 
     $('.navbar-fixed-top a[href^="#"]').on('click', function (e) {
         e.preventDefault();
-
         scrollToHash(this.hash);
     });
     $('li').click(function() {
