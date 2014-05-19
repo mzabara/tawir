@@ -4,15 +4,15 @@
     $.fn.extend({
         LoaderAnimation: function(customOptions) {
             var defaults = {
-                    lineWidth: 5,
+                    lineWidth: 1,
                     /* set preloader's line width */
                     color: "#ffffff",
                     /* set preloader color */
-                    glowColor: "#00aeff",
+                    glowColor: null,
                     /* set shadow color */
-                    radius: 45,
+                    radius: 40,
                     /* set the preloader radius (JUST FOR CIRCULAR PRELOADER) */
-                    font: "300 12px Open Sans",
+                    font: "300 30px Open Sans",
                     /* set preloader font (you can embed a font by css and use it here) */
                     onComplete: null /* on Animation completed */
                 },
@@ -41,9 +41,6 @@
              *
              */
             var $window = $(window),
-                PI = Math.PI,
-                startAngle = 1.5 * PI,
-                endAngle = 0,
                 supportsCanvas = !!document.createElement('canvas').getContext,
                 canvasWidth = $(window).width(),
                 canvasHeight = $(window).height(),
@@ -87,25 +84,22 @@
              */
 
             var draw = function() {
-                var alphaPercentage = (2 / 100) * self.currentPercentage,
+                var width = canvasWidth,
+                    height = canvasHeight,
                     positionX = canvasWidth / 2,
-                    positionY = canvasHeight / 2;
+                    positionY = canvasHeight / 2,
+                    alphaPercentage = (width / 100) * self.currentPercentage;
 
-                // calculating end angle of preloader
-                endAngle = (alphaPercentage * PI) + startAngle;
-
-
+                //clearing canvas from everithing
                 clear();
-                ctx.restore();
                 //let's start drawning
+                ctx.restore();
                 ctx.beginPath();
                 //draw percentage text
                 ctx.font = font;
                 ctx.fillStyle = color;
                 ctx.textAlign = "center";
-                ctx.textBaseline = "middle";
-                ctx.fillText((self.currentPercentage | 0) + "%", positionX, positionY);
-
+                ctx.fillText((self.currentPercentage | 0) + "%", positionX, positionY - (lineWidth + 10));
                 //width of the preloader line
                 ctx.lineWidth = lineWidth;
                 //color of preloader line
@@ -113,12 +107,13 @@
                 if (glowColor) {
                     ctx.shadowOffsetX = 0;
                     ctx.shadowOffsetY = 0;
-                    ctx.shadowBlur = 20;
+                    ctx.shadowBlur = 10;
                     ctx.shadowColor = glowColor;
                 }
-                ctx.arc(positionX, positionY, radius, startAngle, endAngle, false);
-
+                ctx.moveTo(positionX - (width / 2), positionY);
+                ctx.lineTo(alphaPercentage, positionY);
                 ctx.stroke();
+
                 ctx.save();
             };
 
