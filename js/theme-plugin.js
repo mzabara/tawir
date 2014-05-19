@@ -31,10 +31,10 @@ if($('#map_canvas').length > 0) {
         var map_options = {
             center: new google.maps.LatLng(55.753718, 37.558005),
             zoom: 17,
-            mapTypeId: google.maps.MapTypeId.ROADMAP
+            mapTypeId: google.maps.MapTypeId.ROADMAP,
+            scrollwheel: false
         }
         var map = new google.maps.Map(map_canvas, map_options)
-
         var marker = new google.maps.Marker({
             position: myLatlng,
             map: map,
