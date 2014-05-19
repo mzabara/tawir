@@ -12,6 +12,13 @@ if($('#sectionStart').length > 0) {
 
 $(window).on('load',function(){
     var hash = window.location.hash;
+
+    if(!hash) {
+        $('ul.section-nav a:first').parent().addClass('active');
+    }
+
+    $('ul.section-nav a[href="'+hash+'"]').tab('show');
+
     scrollToHash(hash);
     $('ul.nav a[href="'+hash+'"]').parent().addClass('active');
 });
@@ -41,9 +48,10 @@ function scrollToHash(hash) {
     var target = hash,
         $target = $(target),
         offset_delta = 55;
+
     if(hash == '') return;
     if(target == '#sectionContacts') {
-        offset_delta = offset_delta = -($target.height() - $(window).height() + 2);
+        offset_delta = -($target.height() - $(window).height() + 2);
     }
     $('html, body').stop().animate({
         'scrollTop': $target.offset().top - offset_delta
