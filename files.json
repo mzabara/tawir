@@ -5,6 +5,14 @@
             "h264": {
                 "source": "./images/media/1.mp4",
                 "size": 1521298
+            },
+            "webm":{
+                "source":"./images/media/webm.webm",
+                "size":155075
+            },
+            "ogg":{
+                "source":"./images/media/ogv.ogv",
+                "size":134703
             }
         }
     }]
