@@ -10,7 +10,6 @@ $(document).ready(function() {
     $('.section-sub-nav a').bind('click', function (e) {
         var hash = this.hash;
         e.preventDefault()
-        $('div'+hash).addClass('fade active in');
         $(this).tab('show');
         $(this).closest('.tab-pane').children('.tab-pane-content-holder').hide()
     });
