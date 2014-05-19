@@ -47,12 +47,10 @@ if($('#map_canvas').length > 0) {
 function scrollToHash(hash) {
     var target = hash,
         $target = $(target),
-        offset_delta = 55;
+        offset_delta = 0;
 
     if(hash == '') return;
-    if(target == '#sectionContacts') {
-        offset_delta = -($target.height() - $(window).height() + 2);
-    }
+
     $('html, body').stop().animate({
         'scrollTop': $target.offset().top - offset_delta
     }, 900, 'swing', function () {
