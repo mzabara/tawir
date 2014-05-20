@@ -35,6 +35,7 @@
 </head>
 <body class="inner-page-holder">
 <div id="html5Loader"></div>
+<div class="scroll-to-top"></div>
 <div class="media-bg">
     <video width="2030" height="1144" id="player1">
         <!-- MP4 for Safari, IE9, iPhone, iPad, Android, and Windows Phone 7 -->
@@ -56,7 +57,7 @@
             <li class="active"><a href="start.html#sectionOurServices">Наши услуги</a></li>
             <li><a href="start.html#sectionWhyWe">О нас</a></li>
             <li><a href="start.html#sectionOurClients">Наши клиенты</a></li>
-            <li><a href="start.html#sectionQuestion">Вопросы</a></li>
+            <!--<li><a href="start.html#sectionQuestion">Вопросы</a></li>-->
             <li><a href="start.html#sectionContacts">Контакты</a></li>
         </ul>
     </div>
@@ -85,6 +86,7 @@
 <div class="tab-content second-level" id="sectionNavContent">
 <!-- Раздел Типография-->
 <div class="tab-pane fade in active" id="printingHouse">
+<div class="affix-bg"></div>
 <ul class="section-sub-nav nav nav-tabs">
     <li><a href="#corpBlank">Фирменные бланки</a></li>
     <li><a href="#booklets">Буклеты, брошюры, каталоги</a></li>
@@ -423,6 +425,7 @@
 </div>
 <!-- Раздел Сувенирная продукция-->
 <div class="tab-pane fade" id="suvenir">
+    <div class="affix-bg"></div>
     <ul class="section-sub-nav nav nav-tabs">
         <li><a href="#businessGifts">Бизнес-сувениры</a></li>
         <li><a href="#holidaysGifts">Бизнес-сувениры и подарки к праздникам</a></li>
@@ -523,6 +526,7 @@
 </div>
 <!--Раздел Реклама в СМИ-->
 <div class="tab-pane fade" id="advertisingMedia">
+    <div class="affix-bg"></div>
     <ul class="section-sub-nav nav nav-tabs">
         <li><a href="#advertisingRadio">Реклама на радио</a></li>
         <li><a href="#advertisingTv">Реклама на ТВ</a></li>
@@ -617,6 +621,7 @@
 </div>
 <!-- Раздел Реклама на транспорте-->
 <div class="tab-pane fade" id="transportAdvertising">
+    <div class="affix-bg"></div>
     <ul class="section-sub-nav nav nav-tabs">
         <li><a href="#">Пункт меню</a></li>
     </ul>
@@ -637,6 +642,7 @@
 </div>
 <!-- Раздел BTL-->
 <div class="tab-pane fade" id="BTL">
+    <div class="affix-bg"></div>
     <ul class="section-sub-nav nav nav-tabs">
         <li><a href="#">Пункт меню</a></li>
     </ul>
@@ -657,6 +663,7 @@
 </div>
 <!-- Раздел Наружная реклама-->
 <div class="tab-pane fade" id="outdoorAdvertising">
+    <div class="affix-bg"></div>
     <ul class="section-sub-nav nav nav-tabs">
         <li><a href="#billboards">Рекламные щиты</a></li>
         <li><a href="#console">Консоли</a></li>
@@ -790,6 +797,7 @@
 </div>
 <!-- Раздел Разработка сайтов-->
 <div class="tab-pane fade" id="webDevelopment">
+    <div class="affix-bg"></div>
     <ul class="section-sub-nav nav nav-tabs">
         <li><a href="#">Пункт меню</a></li>
     </ul>
@@ -810,6 +818,7 @@
 </div>
 <!-- Раздел Продвижение сайтов-->
 <div class="tab-pane fade" id="SEO">
+    <div class="affix-bg"></div>
     <ul class="section-sub-nav nav nav-tabs">
         <li><a href="#">Пункт меню</a></li>
     </ul>
@@ -837,7 +846,7 @@
 
 <!-- Modal -->
 <div class="modal fade" id="addOrder" tabindex="-1" role="dialog">
-    <div class="modal-dialog modal-lg">
+    <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
@@ -859,10 +868,10 @@
                             </div>
                             <div class="form-group">
                                 <div class="row">
-                                    <div class="col-lg-5">
+                                    <div class="col-lg-6">
                                         <img src="images/captcha.jpg" alt=""/>
                                     </div>
-                                    <div class="col-lg-2 text-center">
+                                    <div class="col-lg-1 nopadding">
                                         <a href="" class="icon-refresh"><img src="images/refresh.png" alt=""/></a>
                                     </div>
                                     <div class="col-lg-5">

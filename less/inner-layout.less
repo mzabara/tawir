@@ -11,6 +11,20 @@
     font-weight: 300;
     font-size: 18px;
   }
+
+  .scroll-to-top {
+    position: fixed;
+    background:url("../images/scroll-to-top.gif") no-repeat 0 0;
+    cursor: pointer;
+    width:41px;
+    height: 41px;
+    right: 1.3em;
+    bottom: 3.5em;
+    padding-right: 1em;
+    display: none;
+    z-index: 999;
+  }
+
   main{
     display: table;
     width: 100%;
@@ -96,6 +110,8 @@
       }
       .nav-tabs{
         &.section-sub-nav{
+          position: relative;
+          z-index: 5;
           margin:9px 0 15px 0;
           padding: 0;
           list-style-type: none;
@@ -132,40 +148,57 @@
         }
       }
       .tab-pane-content-holder{
+        position: relative;
+        z-index: 5;
         line-height: 20px;
         width: 800px;
         text-align: justify;
       }
+      .affix-bg{
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 1;
+        width: 80%;
+        height: 600px;
+      }
       #printingHouse{
-        background-image: url("../images/bg/typo.jpg");
-        background-position: 100% 0;
-        background-repeat: no-repeat;
-        background-attachment:fixed;
-        -webkit-background-size: auto;
-        -moz-background-size: auto;
-        -o-background-size: auto;
-        background-size: auto;
+        .affix-bg{
+          background: url("../images/bg/typo.jpg") 100% 0 no-repeat;
+        }
       }
       #suvenir{
-        background: url("../images/bg/suvenir.jpg") no-repeat 100% 0;
+        .affix-bg{
+          background: url("../images/bg/suvenir.jpg") no-repeat 100% 0;
+        }
       }
       #advertisingMedia{
         background: url("../images/bg/smi.jpg") no-repeat 100% 50px;
       }
       #transportAdvertising{
-        background: url("../images/bg/transport.jpg") no-repeat 100% 50px;
+        .affix-bg{
+          background: url("../images/bg/transport.jpg") no-repeat 100% 50px;
+        }
       }
       #BTL{
-        background: url("../images/bg/btl.jpg") no-repeat 100% 50px;
+        .affix-bg{
+          background: url("../images/bg/btl.jpg") no-repeat 100% 50px;
+        }
       }
       #outdoorAdvertising{
-        background: url("../images/bg/naruzhka.jpg") no-repeat 100% 50px;
+        .affix-bg{
+          background: url("../images/bg/naruzhka.jpg") no-repeat 100% 50px;
+        }
       }
       #webDevelopment{
-        background: url("../images/bg/razrab_sites.jpg") no-repeat 100% 50px;
+        .affix-bg{
+          background: url("../images/bg/razrab_sites.jpg") no-repeat 100% 50px;
+        }
       }
       #SEO{
-        background: url("../images/bg/seo.jpg") no-repeat 100% 50px;
+        .affix-bg{
+          background: url("../images/bg/seo.jpg") no-repeat 100% 50px;
+        }
       }
     }
     .btn-add-order{
