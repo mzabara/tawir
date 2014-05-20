@@ -561,7 +561,7 @@ h2.light-heading{
     position: relative;
     top: 50%;
     z-index: 4;
-    width: 500px;
+    width: 550px;
     margin: -124px auto 0 auto;
     padding: 10px 25px 25px 25px;
     background-color: rgba(255,255,255,.8);
@@ -574,7 +574,7 @@ h2.light-heading{
     }
     .phone-num{
       color: #333333;
-      font-size: 24px;
+      font-size: 23px;
       font-weight: 300;
     }
     .nav-contact{
@@ -616,15 +616,19 @@ footer{
 #callMe{
   font-weight: 300!important;
   .modal-dialog{
-    margin: 10% auto 0 auto!important;
-    width: 600px!important;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -87px -275px!important;
+    width: 550px!important;
     .btn-group{
       .btn{
-        padding: 4px 8px;
+        padding: 3px 6px 3px 5px;
         border-radius: 0;
         background-color: #c5cedd;
         color: #13407b;
         margin: 0 6px;
+        font-size: 12px;
         &:first-child{
           margin-left: 0;
         }
@@ -633,6 +637,7 @@ footer{
         }
         &.active{
           background-color: #13407b;
+          font-weight: bold;
           color: #ffffff;
         }
       }
@@ -647,11 +652,21 @@ footer{
 }
 #sendMsg{
   .modal-dialog{
-    margin: 10% auto 0 auto!important;
-    width: 500px!important;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -197px -275px!important;
+    width: 550px!important;
   }
   .form-group{
     margin:0 0 20px 0!important;
+    .form-control{
+      height: 37px!important;
+      line-height: 37px!important;
+      &textarea{
+        height: 127px!important;
+      }
+    }
   }
 }
 #callMe,
@@ -724,6 +739,13 @@ footer{
   }
 }
 
+.modal-backdrop{
+  background-color: rgba(19,64,124,1)!important;
+  &.in{
+    opacity: .9!important;
+    filter: alpha(opacity=90)!important;
+  }
+}
 .modal-open{
   overflow-y: scroll!important;
 }
