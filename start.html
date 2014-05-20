@@ -388,10 +388,10 @@
         </div>
         <div class="row nav-contact">
             <div class="col-lg-6 nopadding">
-                <a href=""><img src="images/smsg.png" alt=""/> Отправить сообщение</a>
+                <a href="#sendMsg" data-toggle="modal"><img src="images/smsg.png" alt=""/> Отправить сообщение</a>
             </div>
             <div class="col-lg-6 nopadding">
-                <a href=""><img src="images/call.png" alt=""/> Перезвонить мне</a>
+                <a href="#callMe" data-toggle="modal"><img src="images/call.png" alt=""/> Перезвонить мне</a>
             </div>
         </div>
     </div>
@@ -402,28 +402,111 @@
                     © 2014 TAWIR MEDIA
                 </div>
 
-                <ul class="col-lg-10">
+                <ul class="col-lg-10 footer-nav">
                     <li class="col-lg-3">
-                        <p><a href="">полиграфия</a></p>
-                        <p><a href="">сувенирная продукция</a></p>
+                        <p><a href="inner.html#printingHouse">полиграфия</a></p>
+                        <p><a href="inner.html#suvenir">сувенирная продукция</a></p>
                     </li>
                     <li class="col-lg-3">
-                        <p><a href="">реклама в сми</a></p>
-                        <p><a href="">btl</a></p>
+                        <p><a href="inner.html#advertisingMedia">реклама в сми</a></p>
+                        <p><a href="inner.html#BTL">btl</a></p>
                     </li>
                     <li class="col-lg-3">
-                        <p><a href="">реклама на транспорте</a></p>
-                        <p><a href="">наружная реклама</a></p>
+                        <p><a href="inner.html#transportAdvertising">реклама на транспорте</a></p>
+                        <p><a href="inner.html#outdoorAdvertising">наружная реклама</a></p>
                     </li>
                     <li class="col-lg-3">
-                        <p><a href="">разработка сайтов</a></p>
-                        <p><a href="">продвижение сайтов</a></p>
+                        <p><a href="inner.html#webDevelopment">разработка сайтов</a></p>
+                        <p><a href="inner.html#SEO">продвижение сайтов</a></p>
                     </li>
                 </ul>
             </div>
         </div>
     </footer>
 </section>
+<!-- Modal -->
+<div class="modal fade" id="sendMsg" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h3 class="modal-title">Пишите нам</h3>
+            </div>
+            <div class="modal-body">
+                <form role="form">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Ваше имя">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                <input type="email" class="form-control" placeholder="Email">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="form-group">
+                                <textarea class="form-control" placeholder="Сообщение"></textarea>
+                            </div>
+                            <div class="form-group text-center">
+                                <input type="submit" class="btn-order" value="Отправить"/>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="callMe" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h3 class="modal-title">Перезвоните мне</h3>
+            </div>
+            <div class="modal-body">
+                <form role="form">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <small>Укажите удобное для вас время для звонка</small>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="btn-group" data-toggle="buttons">
+                                <label class="btn">
+                                    <input type="radio" name="options" id="option1"> 12<sup>00</sup> - 15<sup>00</sup>
+                                </label>
+                                <label class="btn">
+                                    <input type="radio" name="options" id="option2"> 15<sup>00</sup> - 18<sup>00</sup>
+                                </label>
+                                <label class="btn">
+                                    <input type="radio" name="options" id="option3"> 18<sup>00</sup> - 21<sup>00</sup>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="+7 (   )">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                <input type="submit" class="btn-order" value="Заказать обратный звонок"/>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
 <script type="text/javascript">
     var loaderAnimation = $("#html5Loader").LoaderAnimation();
 

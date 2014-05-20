@@ -613,6 +613,49 @@ footer{
   }
 }
 
+#callMe{
+  font-weight: 300!important;
+  .modal-dialog{
+    margin: 10% auto 0 auto!important;
+    width: 600px!important;
+    .btn-group{
+      .btn{
+        padding: 4px 8px;
+        border-radius: 0;
+        background-color: #c5cedd;
+        color: #13407b;
+        margin: 0 6px;
+        &:first-child{
+          margin-left: 0;
+        }
+        &:last-child{
+          margin-right: 0;
+        }
+        &.active{
+          background-color: #13407b;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+  .btn-order{
+    width: 100%!important;
+  }
+  small{
+    font-size: 13px!important;
+  }
+}
+#sendMsg{
+  .modal-dialog{
+    margin: 10% auto 0 auto!important;
+    width: 500px!important;
+  }
+  .form-group{
+    margin:0 0 20px 0!important;
+  }
+}
+#callMe,
+#sendMsg,
 #addOrder{
   overflow-y: auto;
   .modal-dialog{
@@ -644,18 +687,18 @@ footer{
         .form-group{
           margin: 20px 0;
           .form-control{
-            height: 43px;
-            line-height: 43px;
+            height: 40px;
+            line-height: 40px;
             border-radius: 0;
             border-color: #c8d3e1;
-            &::-moz-placeholder           { color: #13407c; opacity: 1; font-size: 15px;font-weight: 300;}
-            &:-ms-input-placeholder       { color: #13407c; font-size: 15px;font-weight: 300;}
-            &::-webkit-input-placeholder  { color: #13407c; font-size: 15px;font-weight: 300;}
+            &::-moz-placeholder           { color: #13407c; opacity: 1; font-size: 14px;font-weight: 300;}
+            &:-ms-input-placeholder       { color: #13407c; font-size: 14px;font-weight: 300;}
+            &::-webkit-input-placeholder  { color: #13407c; font-size: 14px;font-weight: 300;}
           }
           textarea{
             resize: none;
             height: 168px!important;
-            line-height: 35px!important;
+            line-height: normal!important;
           }
           .icon-refresh{
             line-height: 43px;
@@ -681,6 +724,6 @@ footer{
   }
 }
 
-.modal-backdrop{
-  overflow-y: visible!important;
+.modal-open{
+  overflow-y: scroll!important;
 }
