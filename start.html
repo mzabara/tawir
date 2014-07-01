@@ -41,14 +41,14 @@
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
             <a class="navbar-brand" href="#sectionStart">
-                <img src="images/brand.png" alt="Tawir Media"/>
+                <img src="images/inner-logo.jpg" alt="Tawir Media"/>
             </a>
         </div>
         <ul class="nav navbar-nav">
             <li><a href="#sectionOurServices">Наши услуги</a></li>
             <li><a href="#sectionWhyWe">О нас</a></li>
             <li><a href="#sectionOurClients">Наши клиенты</a></li>
-            <li><a href="#sectionQuestion">Вопросы</a></li>
+            <!--<li><a href="#sectionQuestion">Вопросы</a></li>-->
             <li><a href="#sectionContacts">Контакты</a></li>
         </ul>
     </div><!-- /.container-fluid -->
@@ -194,71 +194,71 @@
             <div class="clients-list-holder">
                 <ul>
                     <li>
-                        <a href="">
+                        <a href="http://www.alfastrah.ru/" target="_blank">
                             <span class="clients logo-1"></span>
                         </a>
                     </li>
                     <li>
-                        <a href="">
+                        <a href="http://www.sogaz.ru/" target="_blank">
                             <span class="clients logo-2"></span>
                         </a>
                     </li>
                     <li>
-                        <a href="">
+                        <a href="http://www.vtb24.ru/" target="_blank">
                             <span class="clients logo-3"></span>
                         </a>
                     </li>
                     <li>
-                        <a href="">
+                        <a href="http://www.zurich.ru/" target="_blank">
                             <span class="clients logo-4"></span>
                         </a>
                     </li>
                     <li>
-                        <a href="">
+                        <a href="http://www.rgs.ru/" target="_blank">
                             <span class="clients logo-5"></span>
                         </a>
                     </li>
                     <li>
-                        <a href="">
+                        <a href="http://www.reso.ru/" target="_blank">
                             <span class="clients logo-6"></span>
                         </a>
                     </li>
                     <li>
-                        <a href="">
+                        <a href="http://www.raiffeisen.ru/" target="_blank">
                             <span class="clients logo-7"></span>
                         </a>
                     </li>
                     <li>
-                        <a href="">
+                        <a href="http://www.allianz.ru/" target="_blank">
                             <span class="clients logo-8"></span>
                         </a>
                     </li>
                     <li>
-                        <a href="">
+                        <a href="http://alfabank.ru/" target="_blank">
                             <span class="clients logo-9"></span>
                         </a>
                     </li>
                     <li>
-                        <a href="">
+                        <a href="http://www.bankuralsib.ru/" target="_blank">
                             <span class="clients logo-10"></span>
                         </a>
                     </li>
-                    <!--<li>-->
-                        <!--<a href="">-->
-                            <!--<span class="clients logo-11"></span>-->
-                        <!--</a>-->
-                    <!--</li>-->
-                    <!--<li>-->
-                        <!--<a href="">-->
-                            <!--<span class="clients logo-12"></span>-->
-                        <!--</a>-->
-                    <!--</li>-->
+                    <li>
+                        <a href="http://alfabank.ru/" target="_blank">
+                            <span class="clients logo-9"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://www.bankuralsib.ru/" target="_blank">
+                            <span class="clients logo-10"></span>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
     </div>
 </section>
-<section id="sectionQuestion" class="section-holder">
+<section id="sectionQuestion" class="section-holder hidden">
     <div class="bordered"></div>
     <div class="container">
         <div class="section-content">
@@ -384,6 +384,7 @@
     </div>
 </section>
 <section id="sectionContacts" class="section-holder">
+    <div class="bordered"></div>
     <div id="map_canvas"></div>
     <div class="contact-info-holder">
         <h1 class="light-heading text-center">Контакты</h1>
@@ -392,16 +393,16 @@
             <div class="col-lg-6">
                 123610, Москва<br>Краснопресненская наб. д. 12<br><a href="mailto:info@tawir.ru">info@tawir.ru</a>
             </div>
-            <div class="col-lg-6 text-right">
+            <div class="col-lg-6">
                 <div class="phone-num">+7 (495) 363 40 60</div>
             </div>
         </div>
         <div class="row nav-contact">
-            <div class="col-lg-6 nopadding">
-                <a href=""><img src="images/smsg.png" alt=""/> Отправить сообщение</a>
+            <div class="col-lg-6">
+                <a href="#sendMsg" data-toggle="modal"><img src="images/smsg.png" alt=""/> Отправить сообщение</a>
             </div>
-            <div class="col-lg-6 nopadding">
-                <a href=""><img src="images/call.png" alt=""/> Перезвонить мне</a>
+            <div class="col-lg-6">
+                <a href="#callMe" data-toggle="modal"><img src="images/call.png" alt=""/> Перезвонить мне</a>
             </div>
         </div>
     </div>
@@ -412,28 +413,108 @@
                     © 2014 TAWIR MEDIA
                 </div>
 
-                <ul class="col-lg-10">
+                <ul class="col-lg-10 footer-nav">
                     <li class="col-lg-3">
-                        <p><a href="">полиграфия</a></p>
-                        <p><a href="">сувенирная продукция</a></p>
+                        <p><a href="inner.html#printingHouse">полиграфия</a></p>
+                        <p><a href="inner.html#suvenir">сувенирная продукция</a></p>
                     </li>
                     <li class="col-lg-3">
-                        <p><a href="">реклама в сми</a></p>
-                        <p><a href="">btl</a></p>
+                        <p><a href="inner.html#advertisingMedia">реклама в сми</a></p>
+                        <p><a href="inner.html#BTL">btl</a></p>
                     </li>
                     <li class="col-lg-3">
-                        <p><a href="">реклама на транспорте</a></p>
-                        <p><a href="">наружная реклама</a></p>
+                        <p><a href="inner.html#transportAdvertising">реклама на транспорте</a></p>
+                        <p><a href="inner.html#outdoorAdvertising">наружная реклама</a></p>
                     </li>
                     <li class="col-lg-3">
-                        <p><a href="">разработка сайтов</a></p>
-                        <p><a href="">продвижение сайтов</a></p>
+                        <p><a href="inner.html#webDevelopment">разработка сайтов</a></p>
+                        <p><a href="inner.html#SEO">продвижение сайтов</a></p>
                     </li>
                 </ul>
             </div>
         </div>
     </footer>
 </section>
+<!-- Modal -->
+<div class="modal fade" id="sendMsg" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h3 class="modal-title">Написать сообщение</h3>
+            </div>
+            <div class="modal-body">
+                <form role="form">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Ваше имя">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                <input type="email" class="form-control" placeholder="Ваш email">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="form-group">
+                                <textarea class="form-control" placeholder="Сообщение"></textarea>
+                            </div>
+                            <div class="form-group text-center">
+                                <input type="submit" class="btn-order" value="Отправить"/>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="callMe" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h3 class="modal-title">Укажите  удобное для вас время звонка</h3>
+            </div>
+            <div class="modal-body">
+                <form role="form">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="btn-group" data-toggle="buttons">
+                                <label class="btn">
+                                    <input type="radio" name="options" id="option1"> 12<sup>00</sup> - 15<sup>00</sup>
+                                </label>
+                                <label class="btn">
+                                    <input type="radio" name="options" id="option2"> 15<sup>00</sup> - 18<sup>00</sup>
+                                </label>
+                                <label class="btn">
+                                    <input type="radio" name="options" id="option3"> 18<sup>00</sup> - 21<sup>00</sup>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="+7 (   )">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                <input type="submit" class="btn-order" value="Заказать обратный звонок"/>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
 <script type="text/javascript">
     var loaderAnimation = $("#html5Loader").LoaderAnimation();
 

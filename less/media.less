@@ -1,8 +1,3 @@
-@media (max-width: 1700px){
-  .section-bg{
-    top: 50px!important;
-  }
-}
 @media (max-width: 1280px){
   body{
     font-size: 12px;
@@ -34,8 +29,12 @@
     }
   }
 
-  .inner-page-holder{
+  .bordered{
+    height: 55px!important;
+    border-bottom: solid 1px rgba(255,255,255,.8)!important;
+  }
 
+  .inner-page-holder{
     .btn-add-order{
       font-size: 14px!important;
       padding: 5px 10px!important;
@@ -134,7 +133,7 @@
       padding: 0 30px;
 
       p{
-        text-align: justify;
+        font-size: 12px;
       }
     }
   }
@@ -151,10 +150,6 @@
       font-size: 18px!important;
     }
   }
-
-  .section-bg{
-    top: 50px!important;
-  }
   .tab-pane-content-holder{
     font-size: 12px;
   }
@@ -166,13 +161,32 @@
   }
   #sectionOurClients{
     .clients-list-holder{
-      margin-top: 25px;
+      margin-top: 0;
       text-align: center;
+      ul{
+        width: 736px;
+        margin: 0 auto!important;
+        li{
+          margin: 7px;
+        }
+      }
     }
   }
 }
 @media (max-width: 1200px) {
   .tab-pane-content-holder{
     font-size: 12px;
+  }
+}
+
+@media (max-width: 960px) {
+  .inner-page-holder {
+    main {
+      .tab-content {
+        .affix-bg{
+          display: none!important;
+        }
+      }
+    }
   }
 }

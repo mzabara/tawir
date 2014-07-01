@@ -10,18 +10,18 @@ if($('#sectionStart').length > 0) {
     });
 }
 
-$(window).on('load',function(){
-    var hash = window.location.hash;
-
-    if(!hash) {
-        $('ul.section-nav a:first').parent().addClass('active');
-    }
-
-    $('ul.section-nav a[href="'+hash+'"]').tab('show');
-
-    scrollToHash(hash);
-    $('ul.nav a[href="'+hash+'"]').parent().addClass('active');
-});
+//$(window).on('load',function(){
+//    var hash = window.location.hash;
+//
+//    if(!hash) {
+//        $('ul.section-nav a:first').parent().addClass('active');
+//    }
+//
+//    $('ul.section-nav a[href="'+hash+'"]').tab('show');
+//
+//    scrollToHash(hash);
+//    $('ul.nav a[href="'+hash+'"]').parent().addClass('active');
+//});
 
 if($('#map_canvas').length > 0) {
     function initialize() {
@@ -29,8 +29,8 @@ if($('#map_canvas').length > 0) {
 
         var map_canvas = document.getElementById('map_canvas');
         var map_options = {
-            center: new google.maps.LatLng(55.753718, 37.558005),
-            zoom: 17,
+            center: new google.maps.LatLng(55.756218, 37.565705),
+            zoom: 16,
             mapTypeId: google.maps.MapTypeId.ROADMAP,
             scrollwheel: false
         }
@@ -71,6 +71,7 @@ $(document).ready(function () {
             offsetLeft = $(this).offset().left - $('.nav').offset().left;
         }
     });
+
     if($('#player1').length > 0) {
         new MediaElement('player1',{
             defaultVideoWidth: '1000',
