@@ -71,7 +71,6 @@ $(document).ready(function () {
             offsetLeft = $(this).offset().left - $('.nav').offset().left;
         }
     });
-
     if($('#player1').length > 0) {
         new MediaElement('player1',{
             defaultVideoWidth: '1000',
