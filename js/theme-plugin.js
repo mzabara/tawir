@@ -10,18 +10,18 @@ if($('#sectionStart').length > 0) {
     });
 }
 
-$(window).on('load',function(){
-    var hash = window.location.hash;
-
-    if(!hash) {
-        $('ul.section-nav a:first').parent().addClass('active');
-    }
-
-    $('ul.section-nav a[href="'+hash+'"]').tab('show');
-
-    scrollToHash(hash);
-    $('ul.nav a[href="'+hash+'"]').parent().addClass('active');
-});
+//$(window).on('load',function(){
+//    var hash = window.location.hash;
+//
+//    if(!hash) {
+//        $('ul.section-nav a:first').parent().addClass('active');
+//    }
+//
+//    $('ul.section-nav a[href="'+hash+'"]').tab('show');
+//
+//    scrollToHash(hash);
+//    $('ul.nav a[href="'+hash+'"]').parent().addClass('active');
+//});
 
 if($('#map_canvas').length > 0) {
     function initialize() {
@@ -71,6 +71,7 @@ $(document).ready(function () {
             offsetLeft = $(this).offset().left - $('.nav').offset().left;
         }
     });
+
     if($('#player1').length > 0) {
         new MediaElement('player1',{
             defaultVideoWidth: '1000',

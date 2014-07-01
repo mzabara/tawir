@@ -33,8 +33,8 @@
     padding-top: 30px;
     padding-bottom: 60px;
     height: 100%;
-    .aside,
-    .main{
+    aside,
+    article{
       padding-left: 0;
       padding-right: 0;
       display: table-cell;
@@ -42,26 +42,31 @@
       height: 100%;
     }
 
-    .aside{
+    aside{
       position: relative;
       width: 20%;
-      .addres-holder{
-        position: absolute;
-        right: 15px;
-        bottom: 27px;
-        font-size: 14px;
-        font-weight: 300;
+      .affix {
+        width: inherit; //helped keep the content the same size on fluid layouts
+        position: fixed;
+        top: 85px;  //height of the nav
       }
     }
 
-    .main{
+    article{
       width: 80%;
       background-color: rgba(19,64,124,1);
+      padding:35px 30px 30px 30px;
+      .content-holder{
+        position: relative;
+        z-index: 5;
+        line-height: 20px;
+        text-align: justify;
+      }
+
     }
 
+
     .section-nav{
-      position: relative;
-      top: 65px;
       float: right;
       width: 225px;
       margin: 0;
@@ -71,7 +76,7 @@
       li{
         width: 100%;
         &.active{
-          a{
+          > a{
             border: none;
             background-color: rgba(19,64,124,1);
             color: #ffffff;
@@ -93,119 +98,32 @@
             background-color: rgba(19,64,124,0.5);
           }
         }
-      }
-    }
+        .nav{
 
-    .tab-content{
-      &.second-level{
-        line-height: 20px;
-        height: 100%;
-        .tab-pane{
-          padding:60px 30px 30px 30px;
-          height: 100%;
-        }
-      }
-      &.third-level{
-        line-height: 20px;
-        .tab-pane{
-          padding:0px 30px 0px 0px!important;
-        }
-      }
-      .nav-tabs{
-        &.section-sub-nav{
-          position: relative;
-          z-index: 5;
-          margin:9px 0 15px 0;
-          padding: 0;
-          list-style-type: none;
-          border-bottom: none;
-          .clearfix;
           li{
-            padding: 0 20px 0 0;
-            background: url("../images/dot.png") 100% 9px no-repeat;
-            &:first-child{
-              padding-left: 0;
-            }
-            &:last-child{
-              padding-right: 0;
-              background: none;
-            }
             a{
-              border: none;
-              border-radius:0;
-              color: #97adc9;
+              display: block;
+              padding:5px 10px 5px 25px;
+              color: #ffffff;
               font-size: 13px;
-              padding: 0 0 7px 0;
+              border: none;
+              border-radius: 0;
+              margin: 0;
               &:hover{
-                border: none;
-                background-color:transparent;
+                background: none;
+                text-decoration: underline;
               }
             }
             &.active{
               a{
-                color: #ffffff;
-                background-color:transparent;
+                background-color: rgba(19,64,124,0.5);
               }
             }
           }
         }
       }
-      .tab-pane-content-holder{
-        position: relative;
-        z-index: 5;
-        line-height: 20px;
-        width: 800px;
-        text-align: justify;
-      }
-      .affix-bg{
-        position: fixed;
-        top: 0;
-        right: 0;
-        z-index: 1;
-        width: 80%;
-        height: 600px;
-      }
-      #printingHouse{
-        .affix-bg{
-          background: url("../images/bg/typo.jpg") 100% 0 no-repeat;
-        }
-      }
-      #suvenir{
-        .affix-bg{
-          background: url("../images/bg/suvenir.jpg") no-repeat 100% 0;
-        }
-      }
-      #advertisingMedia{
-        .affix-bg{
-          background: url("../images/bg/smi.jpg") no-repeat 100% 50px;
-        }
-      }
-      #transportAdvertising{
-        .affix-bg{
-          background: url("../images/bg/transport.jpg") no-repeat 100% 50px;
-        }
-      }
-      #BTL{
-        .affix-bg{
-          background: url("../images/bg/btl.jpg") no-repeat 100% 50px;
-        }
-      }
-      #outdoorAdvertising{
-        .affix-bg{
-          background: url("../images/bg/naruzhka.jpg") no-repeat 100% 50px;
-        }
-      }
-      #webDevelopment{
-        .affix-bg{
-          background: url("../images/bg/razrab_sites.jpg") no-repeat 100% 50px;
-        }
-      }
-      #SEO{
-        .affix-bg{
-          background: url("../images/bg/seo.jpg") no-repeat 100% 50px;
-        }
-      }
     }
+
     .btn-add-order{
       margin-top: 15px;
       font-size: 18px;
@@ -220,6 +138,8 @@
       }
     }
   }
+
+
   footer{
     height: 60px!important;
     padding: 23px 0 0 0;
@@ -228,6 +148,13 @@
       padding-right: 98px;
       text-align: right;
       width: 20%;
+    }
+    .addres-holder{
+      width: 50%;
+      padding-left: 30px;
+      display: inline-block;
+      font-size: 14px;
+      font-weight: 300;
     }
   }
 }
