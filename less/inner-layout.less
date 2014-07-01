@@ -61,6 +61,9 @@
         z-index: 5;
         line-height: 20px;
         text-align: justify;
+        p{
+          padding: 13px 0;
+        }
       }
 
     }
@@ -76,6 +79,9 @@
       li{
         width: 100%;
         &.active{
+          .nav {
+            display: block;
+          }
           > a{
             border: none;
             background-color: rgba(19,64,124,1);
@@ -99,7 +105,7 @@
           }
         }
         .nav{
-
+            display: none;
           li{
             a{
               display: block;
@@ -123,20 +129,6 @@
         }
       }
     }
-
-    .btn-add-order{
-      margin-top: 15px;
-      font-size: 18px;
-      font-weight: 300;
-      padding: 10px 15px;
-      border: solid 2px #ffffff;
-      background-color: #13407c;
-      color: #ffffff;
-      &:hover{
-        background-color: #ffffff;
-        color: #13407c;
-      }
-    }
   }
 
 
@@ -153,7 +145,7 @@
       width: 50%;
       padding-left: 30px;
       display: inline-block;
-      font-size: 14px;
+      font-size: 12px;
       font-weight: 300;
     }
   }

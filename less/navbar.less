@@ -95,6 +95,10 @@
     .navbar-nav{
       margin: 5px 0 0 15px;
       li{
+        margin: 0 15px;
+        &:first-child{
+          margin-left: 0;
+        }
         a{
           text-transform: uppercase;
           font-size: 15px;
@@ -112,6 +116,20 @@
             }
           }
         }
+      }
+    }
+    .btn-add-order{
+      margin: 8px 0 0 35px;
+      font-size: 14px;
+      font-weight: 300;
+      padding: 10px 14px;
+      border: solid 1px #13407c;
+      background-color: #ffffff;
+      color: #13407c;
+      text-transform: uppercase;
+      &:hover{
+        background-color: #13407c;
+        color: #ffffff;
       }
     }
   }
