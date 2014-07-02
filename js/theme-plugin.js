@@ -51,6 +51,9 @@ function scrollToHash(hash) {
 
     if(hash == '') return;
 
+    if(!$('#sectionStart').length) {
+        offset_delta = -($('navbar').height());
+    }
     $('html, body').stop().animate({
         'scrollTop': $target.offset().top - offset_delta
     }, 900, 'swing', function () {
@@ -70,6 +73,7 @@ $(document).ready(function () {
             offsetTop = $(this).offset().top - $('.nav').offset().top;
             offsetLeft = $(this).offset().left - $('.nav').offset().left;
         }
+        scrollToHash($(this).find('a').attr('href'));
     });
     if($('#player1').length > 0) {
         new MediaElement('player1',{
