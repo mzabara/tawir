@@ -52,7 +52,7 @@ function scrollToHash(hash) {
     if(hash == '') return;
 
     if(!$('#sectionStart').length) {
-        offset_delta = -($('navbar').height());
+        offset_delta = 59;
     }
     $('html, body').stop().animate({
         'scrollTop': $target.offset().top - offset_delta
@@ -66,15 +66,16 @@ $(document).ready(function () {
         e.preventDefault();
         scrollToHash(this.hash);
     });
-    $('li').click(function() {
-        if ( ! $(this).hasClass('active')) {
-            $('li.active').removeClass('active');
-            $(this).addClass('active');
-            offsetTop = $(this).offset().top - $('.nav').offset().top;
-            offsetLeft = $(this).offset().left - $('.nav').offset().left;
-        }
-        scrollToHash($(this).find('a').attr('href'));
+
+    $('li > a').click(function() {
+        var $li = $(this).parent();
+        if ( ! $li.hasClass('active')) {
+            //$('li.active').removeClass('active');
+            $li.addClass('active');
+        }        console.log($(this).attr('href'));
+        scrollToHash($(this).attr('href'));
     });
+
     if($('#player1').length > 0) {
         new MediaElement('player1',{
             defaultVideoWidth: '1000',
