@@ -1,12 +1,17 @@
 .inner-page-holder{
-
+  .navbar-push-top{
+    height: 85px;
+    .clearfix;
+  }
   h1.light-heading{
     font-weight: 300;
     font-size: 26px!important;
+    margin: 25px 0 15px 0!important;
   }
   h2.light-heading{
     font-weight: 300;
     font-size: 20px;
+    margin: 25px 0 15px 0!important;
   }
   h3.light-heading{
     font-weight: 300;
@@ -31,13 +36,12 @@
     width: 100%;
     position: relative;
     z-index: 2;
-    padding-top: 30px;
     padding-bottom: 60px;
     height: 100%;
     aside,
     article{
-      padding-left: 0;
-      padding-right: 0;
+      padding-left: 0!important;
+      padding-right: 0!important;
       display: table-cell;
       vertical-align: top;
       height: 100%;
@@ -45,7 +49,7 @@
 
     aside{
       position: relative;
-      width: 20%;
+      .make-lg-column(4);
       .affix {
         width: inherit; //helped keep the content the same size on fluid layouts
         position: fixed;
@@ -54,22 +58,27 @@
     }
 
     article{
-      width: 80%;
+      padding:55px 0 0 0;
+      .make-lg-column(8);
       background-color: rgba(19,64,124,1);
-      padding:35px 30px 30px 30px;
       .parent-content-holder{
-        &#printingHouse{
-//          background: url("../images/bg/typo.jpg") 100% 0 no-repeat;
-        }
         .content-holder{
-          border-top: solid 1px rgba(255,255,255,0.4);
+          margin-left: 30px;
+          padding: 0 0 15px 0!important;
+          width: 634px;
+          float: none!important;
+          border-bottom: solid 1px rgba(255,255,255,0.4);
           position: relative;
           z-index: 5;
           line-height: 20px;
+          .content-holder-half-size{
+            width: 305px;
+          }
           p{
             padding: 5px 0;
           }
           ul{
+            padding-left: 15px;
             li{
               padding: 5px 0;
             }
@@ -78,6 +87,18 @@
             border-top: none;
           }
         }
+      }
+      #printingHouse{
+        background: url("../images/bg/typo.png") 299px 0 no-repeat;
+      }
+      #suvenir{
+        background: url("../images/bg/suvenir.png") 299px 0 no-repeat;
+      }
+      #advertisingMedia{
+        background: url("../images/bg/smi.png") 299px 0 no-repeat;
+      }
+      #outdoorAdvertising{
+        background: url("../images/bg/naruzhka.png") 299px 0 no-repeat;
       }
     }
 
@@ -129,7 +150,6 @@
               border-radius: 0;
               margin: 0;
               &:hover{
-                background: none;
                 text-decoration: underline;
               }
             }
@@ -149,12 +169,13 @@
     height: 60px!important;
     padding: 23px 0 0 0;
     .copyright{
+      .make-lg-column(4);
       float: left;
       padding-right: 98px;
       text-align: right;
-      width: 20%;
     }
     .addres-holder{
+      .make-lg-column(8);
       width: 50%;
       padding-left: 30px;
       display: inline-block;

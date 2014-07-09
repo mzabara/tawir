@@ -52,7 +52,7 @@ function scrollToHash(hash) {
     if(hash == '') return;
 
     if(!$('#sectionStart').length) {
-        offset_delta = 59;
+        offset_delta = 85;
     }
     $('html, body').stop().animate({
         'scrollTop': $target.offset().top - offset_delta
