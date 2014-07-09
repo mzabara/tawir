@@ -54,11 +54,18 @@ function scrollToHash(hash) {
     if(!$('#sectionStart').length) {
         offset_delta = 85;
     }
-    $('html, body').stop().animate({
-        'scrollTop': $target.offset().top - offset_delta
-    }, 900, 'swing', function () {
+
+    if($('#sectionStart').length > 0) {
+        $('html, body').stop().animate({
+            'scrollTop': $target.offset().top - offset_delta
+        }, 900, 'swing', function () {
+            window.location.hash = target;
+        });
+    } else {
         window.location.hash = target;
-    });
+    }
+
+
 }
 
 $(document).ready(function () {
@@ -72,7 +79,7 @@ $(document).ready(function () {
         if ( ! $li.hasClass('active')) {
             //$('li.active').removeClass('active');
             $li.addClass('active');
-        }        console.log($(this).attr('href'));
+        }
         scrollToHash($(this).attr('href'));
     });
 
