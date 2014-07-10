@@ -10,18 +10,10 @@ if($('#sectionStart').length > 0) {
     });
 }
 
-//$(window).on('load',function(){
-//    var hash = window.location.hash;
-//
-//    if(!hash) {
-//        $('ul.section-nav a:first').parent().addClass('active');
-//    }
-//
-//    $('ul.section-nav a[href="'+hash+'"]').tab('show');
-//
-//    scrollToHash(hash);
-//    $('ul.nav a[href="'+hash+'"]').parent().addClass('active');
-//});
+$(window).on('load',function(){
+    var hash = window.location.hash;
+    scrollToHash(hash);
+});
 
 if($('#map_canvas').length > 0) {
     function initialize() {
@@ -62,13 +54,14 @@ function scrollToHash(hash) {
             window.location.hash = target;
         });
     } else {
-        window.location.hash = target;
+        $(window).scrollTop($target.offset().top - offset_delta);
     }
 
 
 }
 
 $(document).ready(function () {
+
     $('.navbar-fixed-top a[href^="#"]').on('click', function (e) {
         e.preventDefault();
         scrollToHash(this.hash);
