@@ -44,7 +44,7 @@ function scrollToHash(hash) {
     if(hash == '') return;
 
     if(!$('#sectionStart').length) {
-        offset_delta = $(window).height() < 1028 ? 55 : 85;
+        offset_delta = $(window).height() < 1270 ? 80 : 85;
     }
 
     if($('#sectionStart').length > 0) {
