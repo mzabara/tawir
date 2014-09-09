@@ -68,13 +68,13 @@
         width: inherit; //helped keep the content the same size on fluid layouts
         position: fixed;
         top: 85px;  //height of the nav
+
         .aside-nav{
           float: right;
           width: 225px;
           padding: 0;
           margin: 0;
           list-style-type: none;
-
           li{
             a{
               display: block;
@@ -82,10 +82,46 @@
               color: #ffffff;
               font-size: 14px;
               margin: 0;
+              &:hover{
+                text-decoration: none;
+                background-color: rgba(19,64,124, 1);
+              }
             }
-            a:hover{
-              text-decoration: none;
-              background-color: rgba(19,64,124, 1);
+            &.active{
+              a{
+                text-decoration: none;
+                background-color: rgba(19,64,124, 1);
+              }
+                .sub-nav{
+                  display: block;
+                }
+              }
+            .sub-nav{
+              display: none;
+              padding: 0;
+              margin: 0;
+              list-style-type: none;
+              li{
+                a{
+                  display: block;
+                  padding:5px 10px 5px 20px;
+                  color: #ffffff;
+                  font-size: 13px;
+                  border: none;
+                  border-radius: 0;
+                  margin: 0;
+                  background-color: transparent;
+                  &:hover{
+                    display: block;
+                    background-color: rgba(19,64,124, 0.5);
+                  }
+                }
+                &.active{
+                  a{
+                    background-color: rgba(19,64,124, 0.5);
+                  }
+                }
+              }
             }
           }
         }
