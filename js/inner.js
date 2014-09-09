@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $('.aside-nav a').bind('click', function (e) {
+    $('.aside-nav > li > a').bind('click', function (e) {
         var hash = this.hash;
         e.preventDefault()
         $(this).tab('show')
@@ -7,7 +7,7 @@ $(document).ready(function() {
         $('div'+hash).children('.tab-content').children('.tab-pane').removeClass('active');
     });
 
-    $('.aside-nav a').bind('click', function (e) {
+    $('.sub-nav a').bind('click', function (e) {
         e.preventDefault()
         $(this).tab('show');
         $(this).closest('.tab-pane').children('.tab-pane-content-holder').hide()
