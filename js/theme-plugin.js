@@ -70,7 +70,6 @@ $(document).ready(function () {
     $('li > a').click(function() {
         var $li = $(this).parent();
         if ( ! $li.hasClass('active')) {
-            //$('li.active').removeClass('active');
             $li.addClass('active');
         }
         scrollToHash($(this).attr('href'));

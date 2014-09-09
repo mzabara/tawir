@@ -1,16 +1,18 @@
 $(document).ready(function() {
-    $('.aside-nav a').bind('click', function (e) {
+    $('.aside-nav > li > a').bind('click', function (e) {
         var hash = this.hash;
         e.preventDefault()
+        $('.aside-nav > li.active').removeClass('active');
         $(this).tab('show')
         $('div'+hash).children('.tab-pane-content-holder').show();
         $('div'+hash).children('.tab-content').children('.tab-pane').removeClass('active');
     });
 
-    $('.aside-nav a').bind('click', function (e) {
+    $('.sub-nav a').bind('click', function (e) {
         e.preventDefault()
+        $('.sub-nav li.active').removeClass('active');
         $(this).tab('show');
-        $(this).closest('.tab-pane').children('.tab-pane-content-holder').hide()
+        $(this).closest('.tab-pane').children('.tab-pane-content-holder').hide();
     });
 
 });
