@@ -55,6 +55,32 @@
         position: fixed;
         top: 85px;  //height of the nav
       }
+
+      .section-nav-holder{
+
+        .aside-nav{
+          float: right;
+          width: 225px;
+          padding: 0;
+          margin: 0;
+          list-style-type: none;
+          li{
+            a{
+              display: block;
+              padding:5px 10px;
+              color: #ffffff;
+              font-size: 14px;
+              margin: 0;
+              &:hover{
+                text-decoration: none;
+                background-color: rgba(19,64,124, 1);
+              }
+            }
+          }
+        }
+
+      }
+
     }
 
     article{
@@ -92,7 +118,7 @@
           }
         }
       }
-      #printingHouse{
+      .printingHouse{
         background: url("../images/bg/typo.png") 299px 0 no-repeat;
       }
       #suvenir{
@@ -105,69 +131,7 @@
         background: url("../images/bg/naruzhka.png") 299px 0 no-repeat;
       }
     }
-
-
-    .section-nav{
-      float: right;
-      width: 225px;
-      margin: 0;
-      padding: 0;
-      list-style-type: none;
-      border-bottom:none;
-      li{
-        width: 100%;
-        &.active{
-          .nav {
-            display: block;
-          }
-          > a{
-            border: none;
-            background-color: rgba(19,64,124,1);
-            color: #ffffff;
-            &:hover{
-              background-color: rgba(19,64,124,1);
-            }
-          }
-        }
-        a{
-          display: block;
-          padding:5px 10px;
-          color: #ffffff;
-          font-size: 14px;
-          border: none;
-          border-radius: 0;
-          margin: 0;
-          &:hover{
-            text-decoration: none;
-            background-color: rgba(19,64,124,0.5);
-          }
-        }
-        .nav{
-            display: none;
-          li{
-            a{
-              display: block;
-              padding:5px 10px 5px 20px;
-              color: #ffffff;
-              font-size: 13px;
-              border: none;
-              border-radius: 0;
-              margin: 0;
-              &:hover{
-                text-decoration: underline;
-              }
-            }
-            &.active{
-              a{
-                background-color: rgba(19,64,124,0.5);
-              }
-            }
-          }
-        }
-      }
-    }
   }
-
 
   footer{
     height: 60px!important;

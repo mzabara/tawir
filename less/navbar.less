@@ -1,13 +1,24 @@
 .navbar-fixed-top{
   margin-bottom: 0;
-  min-height: 60px;
+  min-height: 55px;
+  height: 55px;
   border-bottom: none;
+
+  .container{
+    position: relative;
+  }
 
   .navbar-header{
     position: relative;
   }
   .navbar-brand{
-    display: none;
+    position: absolute;
+    top: 13px;
+    left: 0;
+    margin-left: 0!important;
+    width: 164px;
+    height: 29px;
+    background: url("../images/navbar/white-logo.png") 0 0 no-repeat;
   }
 
   .navbar-nav{
@@ -20,9 +31,8 @@
       a{
         color: #ffffff;
         text-transform: uppercase;
-        font-size: 15px;
-        font-weight: 300;
-        padding: 20px 20px 21px 20px;
+        font-size: 12px;
+        padding: 20px 20px 22px 24px;
         line-height: normal;
         &:hover{
           background-color: transparent;
@@ -32,35 +42,64 @@
       }
     }
   }
+  .btn-add-order{
+    position: absolute;
+    top: 7px;
+    right: 0;
+    font-size: 12px;
+    padding: 10px 14px;
+    border: solid 1px #ffffff;
+    color: #ffffff;
+    text-transform: uppercase;
+    background-color: transparent;
+    &:hover{
+      background-color: #ffffff;
+      color: #13407c;
+    }
+  }
   &.white-theme{
     background-color: #ffffff;
-    border-bottom:solid 1px #13407c!important;
     .navbar-brand{
-      display: block;
-      height: auto!important;
-      margin: 10px 15px 0 0;
-      padding: 0;
+      position: absolute;
+      top: 13px;
+      left: 0;
+      margin-left: 0;
+      width: 164px;
+      height: 29px;
+      background: url("../images/navbar/blue-logo.png") 0 0 no-repeat;
     }
     .navbar-nav{
-      float: right;
-      width: auto!important;
+      width: 100%;
+      text-align: center;
       li{
-        &.active{
-          a{
-            background: url("../images/inner_actve.gif") 50% 100% no-repeat;
-            &:hover{
-              background: url("../images/inner_actve.gif") 50% 100% no-repeat;
-              text-decoration: none;
-            }
-          }
-        }
+        display: inline-block;
+        vertical-align: top;
+        float: none;
         a{
           color: #13407c;
+          text-transform: uppercase;
+          font-size: 12px;
+          padding: 20px 20px 0 24px;
+          line-height: normal;
           &:hover{
-            background: url("../images/inner_hover.gif") 50% 45px no-repeat;
             text-decoration: none;
           }
         }
+      }
+    }
+    .btn-add-order{
+      position: absolute;
+      top: 7px;
+      right: 0;
+      font-size: 12px;
+      padding: 10px 14px;
+      border: solid 1px #13407c!important;
+      color: #13407c!important;
+      text-transform: uppercase;
+      background-color: transparent;
+      &:hover{
+        background-color: #13407c!important;
+        color: #ffffff!important;
       }
     }
   }
@@ -72,7 +111,7 @@
   z-index: 2;
   border-radius: 0;
   margin-bottom: 0;
-  min-height: 60px;
+  height: 55px;
   border-bottom: none;
   z-index: 5;
 
@@ -83,51 +122,51 @@
       display: inline-block;
       float: none!important;
       height: auto!important;
-      margin: 10px 28px 0 0;
+      margin: 10px 48px 0 0;
       padding: 0;
     }
   }
   .navbar-nav-holder{
-    .make-lg-column(7);
+    .make-lg-column(8);
     .navbar-nav{
-      margin: 5px 0 0 0;
+      margin: 0;
       li{
-        margin: 0 5px;
-        &:first-child{
-          margin-left: 0;
-        }
-        a{
-          text-transform: uppercase;
-          font-size: 14px;
-          padding-bottom: 20px!important;
-          color: #13407c;
-          padding: 18px 12px!important;
-          &:hover{
-            background: url("../images/inner_hover.gif") 50% 40px no-repeat;
-          }
-        }
+        display: inline-block;
+        vertical-align: top;
+        float: none;
         &.active{
           a{
-            background: url("../images/inner_actve.gif") 50% 100% no-repeat;
             &:hover{
               background-color: transparent;
             }
           }
         }
+        a{
+          color: #13407c;
+          text-transform: uppercase;
+          font-size: 12px;
+          padding: 20px 20px 0 24px;
+          line-height: normal;
+          background-color: transparent;
+          &:hover{
+            text-decoration: none;
+          }
+        }
       }
     }
     .btn-add-order{
-      margin: 8px 0 0 45px;
-      font-size: 14px;
-      font-weight: 300;
+      position: relative;
+      top: 7px;
+      margin-left: 55px;
+      font-size: 12px;
       padding: 10px 14px;
-      border: solid 1px #13407c;
-      background-color: #ffffff;
-      color: #13407c;
+      border: solid 1px #13407c!important;
+      color: #13407c!important;
       text-transform: uppercase;
+      background-color: transparent;
       &:hover{
-        background-color: #13407c;
-        color: #ffffff;
+        background-color: #13407c!important;
+        color: #ffffff!important;
       }
     }
   }
