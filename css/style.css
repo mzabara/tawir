@@ -5398,3 +5398,97 @@ footer ul li .footer-nav-list + .footer-nav-list {
 .push-top-25 {
   margin-top: 25px!important;
 }
+@media (max-width: 1280px) {
+  body {
+    font-size: 12px!important;
+    font-weight: 300;
+  }
+  body h1.light-heading {
+    font-size: 26px!important;
+  }
+  body h2.light-heading {
+    font-size: 18px!important;
+  }
+  body .navbar.navbar-default {
+    min-height: 55px!important;
+  }
+  body .navbar.navbar-default .navbar-brand {
+    width: 150px!important;
+    margin: 10px 60px 0 0!important;
+  }
+  body .navbar.navbar-default .navbar-nav li a {
+    padding-top: 16px!important;
+    padding-bottom: 16px!important;
+    font-size: 13px!important;
+  }
+  body .navbar.navbar-default .btn-add-order {
+    margin: 2px 0 0 45px;
+    font-size: 12px;
+    padding: 7px 14px;
+  }
+  body .section-nav-holder .section-nav.nav li a {
+    padding: 3px 10px!important;
+  }
+  body .section-nav-holder .section-nav.nav li ul.nav {
+    margin-bottom: 10px!important;
+  }
+  body .section-nav-holder .section-nav.nav li ul.nav li a {
+    padding: 3px 10px 3px 17px!important;
+  }
+  .article-push-top {
+    height: 80px!important;
+  }
+  #sectionOurServices .service-item-title {
+    font-size: 16px!important;
+  }
+  #sectionWhyWe .light-heading {
+    margin-top: 30px!important;
+  }
+  #sectionWhyWe p {
+    font-size: 12px!important;
+  }
+  #sectionOurClients .clients-list-holder li {
+    margin: 8px!important;
+  }
+}
+@media (max-width: 1110px) {
+  body {
+    font-size: 12px;
+    font-weight: 300;
+  }
+  body .navbar.navbar-default .navbar-nav-holder {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  body .navbar.navbar-default .navbar-nav-holder .btn-add-order {
+    float: right;
+  }
+  body .navbar.navbar-default .navbar-nav-holder .navbar-nav li a {
+    padding-right: 5px!important;
+    padding-left: 5px!important;
+  }
+  body .section-nav-holder .section-nav.nav li a {
+    padding: 3px 10px!important;
+  }
+  body .section-nav-holder .section-nav.nav li ul.nav {
+    margin-bottom: 10px!important;
+  }
+  body .section-nav-holder .section-nav.nav li ul.nav li a {
+    padding: 3px 10px 3px 17px!important;
+  }
+  body.inner-page-holder .parent-content-holder .content-holder {
+    width: 620px!important;
+    padding-right: 15px!important;
+  }
+  body .article-push-top {
+    height: 80px!important;
+  }
+}
+@media (max-width: 1110px) and (min-width: 1px) {
+  body .navbar.navbar-default .navbar-nav-holder {
+    float: left;
+    width: 66.66666666666666%;
+  }
+}
